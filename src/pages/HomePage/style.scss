@@ -1,0 +1,39 @@
+main.home-page {
+    .home-page-section {
+        padding: 0 7.5% 104px;
+        .home-page-box {
+            padding-top: 97px;
+            display: flex;
+            justify-content: space-between;
+            .box-left {
+                width: 50%;
+                .title {
+                    font-weight: bold;
+                    font-size: 32px;
+                    line-height: 40px;
+                    color: #281e78;
+                }
+                .item {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    grid-column-gap: 12.5%;
+                    margin-bottom: 52px;
+                    .subtitle {
+                        font-weight: bold;
+                        font-size: 32px;
+                        line-height: 40px;
+                        color: #281e78;
+                    }
+                }
+            }
+            .box-img-area{
+                width: 45%;
+                img{
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}

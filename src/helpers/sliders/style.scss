@@ -1,0 +1,147 @@
+.slider {
+    padding-top: 96px;
+    .title{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 32px;
+        align-items: flex-end;
+        > h2 {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 40px;
+            color: #281e78;
+            margin-bottom: 0;
+        }
+        >p{
+            margin-bottom: 0;
+        }
+    }
+    .slick-slider {
+        button.slick-arrow {
+            z-index: 9;
+            &.slick-disabled {
+                display: none !important;
+            }
+            &.slick-next::before {
+                content: url("../../resourses/images/slider-arrow.png");
+                opacity: 1;
+            }
+            &.slick-prev {
+                transform: rotate(180deg);
+                top: 58%;
+                left: 10px;
+
+                &::before {
+                    content: url("../../resourses/images/slider-arrow.png");
+                    opacity: 1;
+                }
+            }
+            &.slick-next {
+                right: 10px;
+                top: 40%;
+            }
+        }
+        .slick-list {
+            .slick-track {
+                .slick-slide {
+                    > div {
+                        overflow: hidden;
+                        width: 184px;
+
+                        > .slide-item-1 {
+                            display: flex !important;
+                            justify-content: end;
+                            align-items: flex-end;
+                            width: 184px;
+                            height: 184px;
+                            position: relative;
+                            background-color: #f0f3f5;
+                            border-radius: 10px;
+                            > p {
+                                position: absolute;
+                                top: 16px;
+                                left: 16px;
+                                font-size: 16px;
+                            }
+                            .slick-slide-1-img-area {
+                                width: fit-content;
+                                max-width: 144px;
+                                height: 144px;
+                                overflow: hidden;
+                                float: right;
+                                img {
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                        .slide-item-2 {
+                            width: 184px;
+                            height: 100%;
+                            padding: 16px;
+                            background-color: #f0f3f5;
+                            border-radius: 10px;
+                            .slick-slide-2-img-area {
+                                display: flex;
+                                justify-content: center;
+                            }
+                        }
+                        .slide-2-discription {
+                            .item-name {
+                                margin-top: 8px;
+                                font-weight: bold;
+                                font-size: 16px;
+                                margin-bottom: 0;
+                            }
+                            .item-size {
+                                margin-bottom: 8px;
+                            }
+                            .item-price {
+                                margin-bottom: 8px;
+                                .price {
+                                    font-weight: bold;
+                                    font-size: 20px;
+                                    line-height: 24px;
+                                    color: #281e78;
+                                }
+                                .sale-price{
+                                    text-decoration-line: line-through;
+                                    margin-left: 8px;
+                                }
+                            }
+                            >div{
+                                button{
+                                    padding: 3px 16px;
+                                    border-radius: 10px;
+                                    border: none;
+                                }
+                                .item-btn{
+                                    background-color: #12D8A8;
+                                    color: #FFFFFF;
+                                    margin-right: 8px;
+                                }
+                                .pack-btn{
+                                    background-color: #F0F3F5;
+                                    color: #8B8B8B;
+                                }
+                            }
+                            >button{
+                                width: 100%;
+                                margin-top: 16px;
+                                margin-bottom: 8px;
+                                padding: 12px;
+                                border: 1px solid #281E78;
+                                border-radius: 10px;
+                                background-color: #FFFFFF;
+                                color: #281e78;
+                                &:hover{
+                                    background-color: #281E78;
+                                    color: #FFFFFF;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
