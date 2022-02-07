@@ -1,12 +1,11 @@
 import { Autocomplete, Dialog, TextField } from "@mui/material";
-import BurgerSvgIcon from "../../resourses/icons/BurgerSvgIcon";
 import LogoPostMedSvg from "../../resourses/icons/LogoPostmedSvg";
 import SearchSvgIcon from "../../resourses/icons/SearchSvgIcon";
+import SearchSvgIconMobile from "../../resourses/icons/SearchSvgIconMobile";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React, { useState } from "react";
 import HeaderUserInfo from "./HeaderUserInfo";
 import HeaderMenu from "./HeaderMenu";
-
 export default function HeaderBanner() {
     const [openMenu, setOpenMenu] = useState(false)
     const [searchPopUp, setSearchPopUp] = useState(false);
@@ -18,7 +17,6 @@ export default function HeaderBanner() {
     const openSearchPopUp = function () {
         setSearchPopUp(true);
     }
-
     return (
         <nav>
             <div className="header-burger-logo">
@@ -30,7 +28,7 @@ export default function HeaderBanner() {
                     <LogoPostMedSvg />
                 </div>
             </div>
-            <div>
+            <div className="header-search">
                 <div className="header-search-area">
                     {
                         !searchPopUp && <> <div className="header-pseudo-input"
@@ -40,6 +38,7 @@ export default function HeaderBanner() {
                         </div>
                             <div onClick={openSearchPopUp} className="search-icon">
                                 <SearchSvgIcon />
+                                <SearchSvgIconMobile/>
                             </div>
                         </>
                     }

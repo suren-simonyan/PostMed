@@ -1,37 +1,120 @@
 main.home-page {
     .home-page-section {
         padding: 0 7.5% 104px;
-        .home-page-box {
-            padding-top: 97px;
-            display: flex;
-            justify-content: space-between;
-            .box-left {
-                width: 50%;
-                .title {
-                    font-weight: bold;
-                    font-size: 32px;
-                    line-height: 40px;
-                    color: #281e78;
+        .home-page-box-container {
+            .title {
+                font-weight: bold;
+                font-size: 32px;
+                line-height: 40px;
+                color: #281e78;
+                margin-top: 97px;
+                margin-bottom: 72px;
+                max-width: 400px;
+            }
+            .home-page-box {
+                display: flex;
+                justify-content: space-between;
+                .box-left {
+                    width: 50%;
+                    .item {
+                        display: flex;
+                        justify-content: space-between;
+                        grid-column-gap: 12.5%;
+                        margin-bottom: 52px;
+                        .subtitle {
+                            font-weight: bold;
+                            font-size: 32px;
+                            line-height: 40px;
+                            color: #281e78;
+                        }
+                    }
                 }
-                .item {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    grid-column-gap: 12.5%;
-                    margin-bottom: 52px;
-                    .subtitle {
-                        font-weight: bold;
-                        font-size: 32px;
-                        line-height: 40px;
-                        color: #281e78;
+                .box-img-area {
+                    width: 45%;
+                    margin-top: -96px;
+                    img {
+                        width: 100%;
+                        object-fit: contain;
                     }
                 }
             }
-            .box-img-area{
-                width: 45%;
-                img{
-                    width: 100%;
-                    object-fit: contain;
+        }
+    }
+    @media (min-width: 1750px) {
+        padding: 0 5%;
+    }
+
+    @media (max-width: 1024px) {
+        .home-page-section {
+            padding: 0 0 104px 4.26%;
+            .home-page-box-container {
+                .title {
+                    margin-top: 72px;
+                    margin-bottom: 11px;
+                }
+                .home-page-box {
+                    justify-content: unset;
+                    flex-direction: column;
+                    .box-left {
+                        order: 2;
+                        width: 100%;
+                        padding-right: 16px;
+                        padding-top: 40px;
+                        .item{
+                            justify-content: unset;
+
+                        }
+                    }
+                    .box-img-area {
+                        order: 1;
+                        width: 100%;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .home-page-section {
+            .home-page-box-container {
+                .title {
+                    font-size: 28px;
+                }
+                .home-page-box {
+                    overflow: hidden;
+                    .box-img-area {
+                        width: 125%;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 480px) {
+        .home-page-section {
+            .home-page-box-container {
+                .title {
+                    font-size: 22px;
+                }
+                .home-page-box{
+                    .box-left{
+                        .item{
+                            margin-bottom: 32px;
+                            svg{
+                                width: 80px;
+                                height: 80px;
+                            }
+                            .subtitle {
+                                font-size: 22px;
+                                line-height: 32px;
+                            }
+                            .text{
+                                font-size: 14px;
+                            }
+                            &:last-of-type{
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
                 }
             }
         }

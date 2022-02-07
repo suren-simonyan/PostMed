@@ -10,10 +10,16 @@ export default function SliderTwo({ props }) {
         // dots: true,
         infinite: false,
         speed: 500,
-        slidesToShow: 6,
+        slidesToShow: 7,
         slidesToScroll: 1,
         initialSlide: 0,
         responsive: [
+            {
+                breakpoint: 1921,
+                settings: {
+                    slidesToShow: 6,
+                }
+            },
             {
                 breakpoint: 1350,
                 settings: {
@@ -27,16 +33,31 @@ export default function SliderTwo({ props }) {
                 }
             },
             {
-                breakpoint: 900,
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 4,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 580,
                 settings: {
                     slidesToShow: 3,
+                    arrows: false
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToShow: 2.3,
+                    arrows: false
                 }
             }
         ]
@@ -51,8 +72,8 @@ export default function SliderTwo({ props }) {
             <Slider {...settings}>
                 {
                     props.map((el, index) => (
-                        <>
-                            <div className="slide-item-2" key={index}>
+                        <React.Fragment key={index}>
+                            <div className="slide-item-2">
                                 <div className="slick-slide-2-img-area">
                                     <img src={el} />
                                 </div>
@@ -70,7 +91,7 @@ export default function SliderTwo({ props }) {
                                 </div>
                                 <button>Add to Cart</button>
                             </div>
-                        </>
+                        </React.Fragment>
                     ))
                 }
 

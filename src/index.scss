@@ -1,4 +1,25 @@
-*{
+@font-face {
+    font-family: "Noto Sans";
+    src: url("./resourses/fonts/NotoSans-Bold.ttf");
+}
+@font-face {
+    font-family: "Noto Sans";
+    src: url("./resourses/fonts/NotoSans-BoldItalic.ttf");
+}
+@font-face {
+    font-family: "Noto Sans";
+    src: url("./resourses/fonts/NotoSans-Italic.ttf");
+}
+@font-face {
+    font-family: "Noto Sans";
+    src: url("./resourses/fonts/NotoSans-Regular.ttf");
+}
+@font-face {
+    font-family: "Noto Sans";
+    src: url("./resourses/fonts/OFL.txt");
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,5 +28,9 @@
     margin-bottom: 0;
 }
 
-.font-14{font-size: 14px;}
-.font-16{font-size: 16px;}
+.font-14 {
+    font-size: 14px;
+}
+.font-16 {
+    font-size: 16px;
+}

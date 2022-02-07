@@ -1,3 +1,4 @@
+
 footer {
     border-bottom: 6px solid #12d8a8;
     padding: 48px 7.36% 26px;
@@ -5,6 +6,7 @@ footer {
     .footer {
         display: flex;
         justify-content: space-between;
+        grid-column-gap: 2%;
         .footer-blog-title {
             font-weight: bold;
             font-size: 18px;
@@ -35,7 +37,6 @@ footer {
                     }
                     > p {
                         text-align: left;
-                        white-space: nowrap;
                         position: relative;
                         font-weight: bold;
                         font-size: 16px;
@@ -91,25 +92,109 @@ footer {
                 }
             }
         }
-        .footer-blog {
-            ul {
-                padding: 0;
-                > li {
-                    list-style-type: none;
-                    margin: 16px 0;
-                    line-height: 24px;
+        .footer-blogs {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+            .footer-blog {
+                ul {
+                    padding: 0;
+                    > li {
+                        list-style-type: none;
+                        margin: 16px 0;
+                        line-height: 24px;
+                    }
                 }
             }
         }
     }
-    .footer-extra{
+    .footer-extra {
         text-align: center;
         margin-top: 24px;
-        >div{
+        > div {
             display: flex;
             justify-content: center;
             grid-column-gap: 9px;
             margin-bottom: 16px;
+        }
+    }
+    @media (max-width: 1024px) {
+        padding: 48px 4.26%;
+        .footer {
+            .footer-about-blog {
+                svg {
+                    width: 135px;
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        padding: 32px  4.26% 26px;
+        .footer{
+            justify-content: unset;
+            flex-direction: column;
+            .footer-about-blog, .footer-contact-blog, .footer-blogs{
+                width: 100%;
+            } 
+            .footer-blog-title{
+                font-size: 16px;
+            }
+            .footer-about-blog{
+                .footer-about-description{
+                    max-width: 68%;
+                    margin-bottom: 0;
+                    font-size: 14px;
+                }
+            }
+            .footer-blogs{
+                padding-top: 24px;
+                grid-column-gap: 10%;
+                justify-content: unset;
+                .footer-blog{
+                    ul{
+                        li{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .footer-contact-blog{
+                padding-top: 8px;
+                .footer-constacts{
+                    >div p{
+                        font-size: 14px;
+                    }
+                    &+.footer-blog-title{
+                        display: none;
+                    }
+                }
+                .footer-soc-icons{
+                    display: none;
+                }
+            }
+        }
+        .footer-extra{
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+    @media (max-width: 480px) {
+        .footer{
+            .footer-about-blog{
+                .footer-about-description{
+                    font-size: 12px;
+                }
+            }
+            .footer-blogs{
+                .footer-blog{
+                    ul{
+                        li{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -32,42 +32,44 @@ export default function HomePage() {
             <HomePageBanner props={{ image: img }} />
             <section className="home-page-section">
                 <SliderOne props={arr1} />
-                <div className="home-page-box">
-                    <div className="box-left">
-                        <p className="title">Get the Care You Deserve at a Price You’ll Love</p>
-                        <div className="item">
-                            <div>
-                                <AffordableSvgIcon />
+                <div className="home-page-box-container">
+                    <p className="title">Get the Care You Deserve at a Price You’ll Love</p>
+                    <div className="home-page-box">
+                        <div className="box-left">
+                            <div className="item">
+                                <div>
+                                    <AffordableSvgIcon />
+                                </div>
+                                <div >
+                                    <p className="subtitle">Affordable</p>
+                                    <p className="text">We save you thousands each year on prescription medications and on online doctor visits.
+                                    </p>
+                                </div>
                             </div>
-                            <div >
-                                <p className="subtitle">Affordable</p>
-                                <p className="text">We save you thousands each year on prescription medications and on online doctor visits.
-                                </p>
+                            <div className="item">
+                                <div>
+                                    <TimeSvgIcon />
+                                </div>
+                                <div >
+                                    <p className="subtitle">Affordable</p>
+                                    <p className="text">We save you thousands each year on prescription medications and on online doctor visits.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="item">
+                                <div>
+                                    <ConvenientSvgIcon />
+                                </div>
+                                <div >
+                                    <p className="subtitle">Affordable</p>
+                                    <p className="text">We save you thousands each year on prescription medications and on online doctor visits.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div className="item">
-                            <div>
-                                <TimeSvgIcon />
-                            </div>
-                            <div >
-                                <p className="subtitle">Affordable</p>
-                                <p className="text">We save you thousands each year on prescription medications and on online doctor visits.
-                                </p>
-                            </div>
+                        <div className="box-img-area">
+                            <img src={boxImg} />
                         </div>
-                        <div className="item">
-                            <div>
-                                <ConvenientSvgIcon/>
-                            </div>
-                            <div >
-                                <p className="subtitle">Affordable</p>
-                                <p className="text">We save you thousands each year on prescription medications and on online doctor visits.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="box-img-area">
-                        <img src={boxImg}/>
                     </div>
                 </div>
                 <SliderOne props={arr2} />

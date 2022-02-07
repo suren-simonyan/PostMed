@@ -26,4 +26,26 @@
             }
         }
     }
+    @media (max-width: 1024px) {
+        padding: 0 4.26%;
+        .home-page-banner-bgi {
+            height: 400px;
+            padding: 7% 4.75%;
+            .banner-texes {
+                .banner-text {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                .banner-mid-text{
+                    font-size: 36px;
+                    line-height: 48px;
+                }
+            }
+        }
+        @media (max-width: 768px) {
+            .home-page-banner-bgi{
+                height: 343px;
+            }
+        }
+    }
 }

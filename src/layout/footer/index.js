@@ -20,27 +20,29 @@ export default function Footer() {
                     <p className="footer-blog-title">About Us</p>
                     <p className="footer-about-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
                 </div>
-                <div className="footer-blog" >
-                    <p className="footer-blog-title">Customer service</p>
-                    <ul>
-                        <li>Delivery methods</li>
-                        <li>Delivery methods</li>
-                        <li>Delivery methods</li>
-                        <li>Delivery methods</li>
-                        <li>Delivery methods</li>
-                        <li>Delivery methods</li>
-                    </ul>
-                </div>
-                <div className="footer-blog" >
-                    <p className="footer-blog-title">Customer service</p>
-                    <ul>
-                        <li>Delivery methods</li>
-                        <li>Delivery methods</li>
-                        <li>Delivery methods</li>
-                        <li>Delivery methods</li>
-                        <li>Delivery methods</li>
-                        <li>Delivery methods</li>
-                    </ul>
+                <div className="footer-blogs">
+                    <div className="footer-blog" >
+                        <p className="footer-blog-title">Customer service</p>
+                        <ul>
+                            <li>Delivery methods</li>
+                            <li>Delivery methods</li>
+                            <li>Delivery methods</li>
+                            <li>Delivery methods</li>
+                            <li>Delivery methods</li>
+                            <li>Delivery methods</li>
+                        </ul>
+                    </div>
+                    <div className="footer-blog" >
+                        <p className="footer-blog-title">Customer service</p>
+                        <ul>
+                            <li>Delivery methods</li>
+                            <li>Delivery methods</li>
+                            <li>Delivery methods</li>
+                            <li>Delivery methods</li>
+                            <li>Delivery methods</li>
+                            <li>Delivery methods</li>
+                        </ul>
+                    </div>
                 </div>
                 <div className="footer-contact-blog">
                     <p className="footer-blog-title">Contact</p>

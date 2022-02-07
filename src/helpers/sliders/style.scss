@@ -1,6 +1,6 @@
 .slider {
     padding-top: 96px;
-    .title{
+    .title {
         display: flex;
         justify-content: space-between;
         margin-bottom: 32px;
@@ -12,8 +12,9 @@
             color: #281e78;
             margin-bottom: 0;
         }
-        >p{
+        > p {
             margin-bottom: 0;
+            white-space: nowrap;
         }
     }
     .slick-slider {
@@ -103,39 +104,121 @@
                                     line-height: 24px;
                                     color: #281e78;
                                 }
-                                .sale-price{
+                                .sale-price {
                                     text-decoration-line: line-through;
                                     margin-left: 8px;
                                 }
                             }
-                            >div{
-                                button{
+                            > div {
+                                button {
                                     padding: 3px 16px;
                                     border-radius: 10px;
                                     border: none;
                                 }
-                                .item-btn{
-                                    background-color: #12D8A8;
-                                    color: #FFFFFF;
+                                .item-btn {
+                                    background-color: #12d8a8;
+                                    color: #ffffff;
                                     margin-right: 8px;
                                 }
-                                .pack-btn{
-                                    background-color: #F0F3F5;
-                                    color: #8B8B8B;
+                                .pack-btn {
+                                    background-color: #f0f3f5;
+                                    color: #8b8b8b;
                                 }
                             }
-                            >button{
+                            > button {
                                 width: 100%;
                                 margin-top: 16px;
                                 margin-bottom: 8px;
                                 padding: 12px;
-                                border: 1px solid #281E78;
+                                border: 1px solid #281e78;
                                 border-radius: 10px;
-                                background-color: #FFFFFF;
+                                background-color: #ffffff;
                                 color: #281e78;
-                                &:hover{
-                                    background-color: #281E78;
-                                    color: #FFFFFF;
+                                &:hover {
+                                    background-color: #281e78;
+                                    color: #ffffff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.slider-2 {
+        .slick-slider button.slick-arrow.slick-prev {
+            top: 49%;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        padding-top: 72px;
+        .title{
+            padding-right: 4.26%;
+        }
+        @media (max-width: 768px) {
+            .slick-slider {
+                .slick-list {
+                    .slick-track {
+                        .slick-slide {
+                            > div {
+                                overflow: hidden;
+                                width: 136px;
+                                > .slide-item-1 {
+                                    width: 136px;
+                                    height: 136px;
+                                    .slick-slide-1-img-area {
+                                        max-width: 110px;
+                                        height: 110px;
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                                > .slide-item-2{
+                                    width: 136px;
+                                    .slick-slide-2-img-area{
+                                        max-width: 110px;
+                                        max-height: 110px;
+                                        img{
+                                            object-fit: contain;
+                                        }
+                                    }
+                                }
+                                .slide-2-discription {
+                                    .item-name, .item-size  {
+                                        font-size: 14px;
+                                    }
+                                    .item-price {
+                                        margin-bottom: 8px;
+                                        .price {
+                                            font-size: 16px;
+                                        }
+                                        .sale-price {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                    > div {
+                                        button {
+                                            padding: 3px 16px;
+                                            border-radius: 10px;
+                                            border: none;
+                                        }
+                                        .item-btn {
+                                            background-color: #12d8a8;
+                                            color: #ffffff;
+                                            margin-right: 8px;
+                                        }
+                                        .pack-btn {
+                                            background-color: #f0f3f5;
+                                            color: #8b8b8b;
+                                        }
+                                    }
+                                    > button {
+                                        margin-top: 24px;
+                                        padding: 11px;
+                                        font-weight: bold;
+                                    }
                                 }
                             }
                         }

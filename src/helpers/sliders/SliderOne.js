@@ -8,10 +8,16 @@ export default function SliderOne({ props }) {
         // dots: true,
         infinite: false,
         speed: 500,
-        slidesToShow: 6,
+        slidesToShow: 7,
         slidesToScroll: 1,
         initialSlide: 0,
         responsive: [
+            {
+                breakpoint: 1921,
+                settings: {
+                    slidesToShow: 6,
+                }
+            },
             {
                 breakpoint: 1350,
                 settings: {
@@ -25,16 +31,31 @@ export default function SliderOne({ props }) {
                 }
             },
             {
-                breakpoint: 900,
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 580,
                 settings: {
                     slidesToShow: 3,
+                    arrows: false
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToShow: 2.3,
+                    arrows: false
                 }
             }
         ]
