@@ -1,0 +1,21 @@
+nav.navigation-banner{
+    div{
+        display: flex;
+        justify-content: center;
+        grid-column-gap: 3px;
+        background-color: #F0F3F5;
+        height: 48px;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color: #8B8B8B;
+            &:last-of-type{
+                color: #281E78;
+            }
+        }
+        span{
+            color: #8B8B8B;
+        }
+
+    }
+}

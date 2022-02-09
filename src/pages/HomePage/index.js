@@ -24,7 +24,7 @@ import img9 from "../../resourses/images/70ea37567c320595d458002507b84b3bff6a977
 
 const arr1 = [img1, img2, img3, img1, img2, img3, img1, img2, img3];
 const arr2 = [img4, img5, img6, img4, img5, img6, img4, img5, img6,];
-const arr3 = [img7, img8, img9, img8, img7, img9, img8, img9, img7,]
+export const arr3 = [img7, img8, img9, img8, img7, img9, img8, img9, img7,]
 
 export default function HomePage() {
     return (
