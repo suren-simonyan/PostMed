@@ -18,7 +18,7 @@ export default function HeaderBanner() {
         setSearchPopUp(true);
     }
     return (
-        <nav>
+        <nav className="header-nav">
             <div className="header-burger-logo">
                 <HeaderMenu
                     open={openMenu}

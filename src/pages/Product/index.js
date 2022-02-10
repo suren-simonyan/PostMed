@@ -137,7 +137,7 @@ export default function Products() {
                                     >
                                         <div
                                             className="product-item"
-                                            // className={!(i % 2) ? "product-item" : "product-item opacity-5"}
+                                        // className={!(i % 2) ? "product-item" : "product-item opacity-5"}
                                         >
                                             <div className="product-img-area">
                                                 <img src={el} />
@@ -145,7 +145,7 @@ export default function Products() {
                                         </div>
                                         <div
                                             className="product-discription"
-                                            // className={!(i % 2) ? "product-discription" : "product-discription opacity-5"}
+                                        // className={!(i % 2) ? "product-discription" : "product-discription opacity-5"}
                                         >
                                             <p className="item-name" >Magnidoz</p>
                                             <p className="item-size">120 mg/5 ml</p>
@@ -163,6 +163,13 @@ export default function Products() {
                                     </div>
                                 ))
                             }
+                        </div>
+                        <div className="viewed-products">
+                            <p>you've viewed 64 of 89 products</p>
+                            <div className="all-products">
+                                <span className="viewed-products-procent"></span>
+                            </div>
+                            <button className="view-more-products">view more</button>
                         </div>
                     </div>
                 </div>
