@@ -1,9 +1,9 @@
 nav.navigation-banner{
+    background-color: #F0F3F5;
     div{
         display: flex;
         justify-content: center;
         grid-column-gap: 3px;
-        background-color: #F0F3F5;
         height: 48px;
         align-items: center;
         a{
@@ -17,5 +17,14 @@ nav.navigation-banner{
             color: #8B8B8B;
         }
 
+    }
+    @media screen and (max-width: 580px) {
+        padding: 0 15px;
+        div{
+            justify-content: flex-start;
+            a{
+                font-size: 14px;
+            }
+        }
     }
 }

@@ -37,6 +37,7 @@ export default function HeaderUserInfo() {
                         aria-expanded={open ? 'true' : undefined}
                         aria-haspopup="true"
                         onClick={handleToggle}
+                        style={{width: "40px"}}
                     >
                         <ProfileSvgIcon />
                     </Button>
@@ -99,7 +100,10 @@ export default function HeaderUserInfo() {
                 </div>
             }
             <div className="header-bag">
-                <Button>
+                <Button
+                        style={{width: "40px"}}
+                    maxWidth={40}
+                >
                     <BagSvgIcon />
                 </Button>
             </div>

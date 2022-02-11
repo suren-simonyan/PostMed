@@ -5,9 +5,11 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Checkbox, FormControlLabel } from "@mui/material";
+import { Button, Checkbox, FormControlLabel } from "@mui/material";
+
 
 import { arr3 } from "../HomePage";
+import MobileFiltersButtonSvgIcon from "../../resourses/icons/MobileFiltersButtonSvgIcon";
 
 
 const nav = ["Home", "page-2", "page-3", "this page"]
@@ -125,8 +127,13 @@ export default function Products() {
                     </div>
                     <div className="products-list">
                         <div className="sort-by">
-                            <p>High to Low</p>
-                            <ExpandMoreIcon />
+                            <div>
+                                <p>High to Low</p>
+                                <ExpandMoreIcon />
+                            </div>
+                            <button>
+                                <MobileFiltersButtonSvgIcon />
+                            </button>
                         </div>
                         <div className="products-container">
                             {

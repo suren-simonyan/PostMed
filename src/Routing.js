@@ -12,6 +12,7 @@ export default function Routing() {
             <Routes>
                 <Route path="/" exact element={<HomePage />} />
                 <Route path="/product" exact element={<Products />} />
+                <Route path="/product-detail" exact element={<ProductDetails />} />
             </Routes>
             <Footer />
         </BrowserRouter>
