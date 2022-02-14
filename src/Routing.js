@@ -3,6 +3,7 @@ import Footer from "./layout/footer";
 import Header from "./layout/header/header";
 import HomePage from "./pages/HomePage";
 import Products from "./pages/Product";
+import ProductDetails from "./pages/ProductDetails";
 export default function Routing() {
 
 
@@ -12,7 +13,7 @@ export default function Routing() {
             <Routes>
                 <Route path="/" exact element={<HomePage />} />
                 <Route path="/product" exact element={<Products />} />
-                <Route path="/product-detail" exact element={<ProductDetails />} />
+                <Route path="/product-details" exact element={<ProductDetails />} />
             </Routes>
             <Footer />
         </BrowserRouter>

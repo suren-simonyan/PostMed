@@ -102,7 +102,6 @@ export default function HeaderUserInfo() {
             <div className="header-bag">
                 <Button
                         style={{width: "40px"}}
-                    maxWidth={40}
                 >
                     <BagSvgIcon />
                 </Button>
