@@ -26,7 +26,89 @@
             }
         }
     }
-    @media (max-width: 1024px) {
+}
+
+.homePage-slider-banner {
+    // padding: 0 2.777778%;
+    .slick-slider {
+        button.slick-arrow {
+            z-index: 9;
+            &.slick-disabled {
+                display: none !important;
+            }
+            &.slick-next::before {
+                content: url("../../resourses/images/slider-arrow.png");
+                opacity: 1;
+            }
+            &.slick-prev {
+                transform: rotate(180deg);
+                top: 52%;
+                left: 7%;
+
+                &::before {
+                    content: url("../../resourses/images/slider-arrow.png");
+                    opacity: 1;
+                }
+            }
+            &.slick-next {
+                right: 7%;
+                top: 42%;
+            }
+        }
+        .slick-list {
+            .slick-track {
+                .slick-slide {
+                    padding: 0 40px;
+                    .home-page-banner-bgi {
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        border-radius: 32px;
+                        height: 316px;
+                        padding: 38px 10%;
+                        .banner-texes {
+                            .banner-text {
+                                font-weight: normal;
+                                font-size: 28px;
+                                line-height: 38px;
+                                color: #ffffff;
+                                margin: 0;
+                            }
+                            .banner-mid-text {
+                                font-weight: bold;
+                                font-size: 45px;
+                                line-height: 52px;
+                                color: #ffffff;
+                                margin-bottom: 4px;
+                            }
+                            .baner-shop-now {
+                                padding: 12px 43px;
+                                border-radius: 10px;
+                                border: 1px solid #ffffff;
+                                color: #ffffff;
+                                background: transparent;
+                                font-weight: bold;
+                                margin-top: 16px;
+                                cursor: pointer;
+                                transition: 0.3s;
+                                &:hover{
+                                    background-color: #FFFFFF;
+                                    span{
+                                        -webkit-background-clip: text;
+                                        -webkit-text-fill-color: transparent;
+                                        background-image: linear-gradient( #281E78, #12D8A8);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .home-page-banner {
         padding: 0 4.26%;
         .home-page-banner-bgi {
             height: 400px;
@@ -36,15 +118,80 @@
                     font-size: 24px;
                     line-height: 32px;
                 }
-                .banner-mid-text{
+                .banner-mid-text {
                     font-size: 36px;
                     line-height: 48px;
                 }
             }
         }
-        @media (max-width: 768px) {
-            .home-page-banner-bgi{
+    }
+    .homePage-slider-banner {
+        .slick-slider {
+            button.slick-arrow {
+                &.slick-prev {
+                    display: none;
+                    &::before{
+                        display: none;
+                    }
+                }
+                &.slick-next {
+                    display: none;
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
+            .slick-list {
+                .slick-track {
+                    .slick-slide {
+                    padding: 0 24px;
+                        .home-page-banner-bgi {
+                            .banner-texes {
+                                .banner-text {
+                                    font-size: 24px;
+                                    line-height: 33px;
+                                }
+                                .banner-mid-text {
+                                    font-size: 36px;
+                                    line-height: 48px;
+                                }
+                                .baner-shop-now {
+                                    padding: 12px 43px;
+                                    border-radius: 10px;
+                                    border: 1px solid #ffffff;
+                                    color: #ffffff;
+                                    background: transparent;
+                                    font-weight: bold;
+                                    margin-top: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        .home-page-banner {
+            .home-page-banner-bgi {
                 height: 343px;
+            }
+        }
+        .homePage-slider-banner {
+            .slick-slider {
+                .slick-list {
+                    .slick-track {
+                        .slick-slide {
+                            padding: 0 16px;
+                            .home-page-banner-bgi{
+                                padding: 38px 5%;
+                                height: 360px;
+                            }
+                        }
+                    }
+                }
+                
             }
         }
     }

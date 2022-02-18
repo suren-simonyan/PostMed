@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React, { Component } from "react";
 import Slider from "react-slick";
 import "./style.scss";
@@ -75,7 +76,9 @@ export default function SliderTwo({ props }) {
                         <React.Fragment key={index}>
                             <div className="slide-item-2">
                                 <div className="slick-slide-2-img-area">
-                                    <img src={el} />
+                                    <Link to="/product">
+                                        <img src={el} />
+                                    </Link>
                                 </div>
                             </div>
                             <div className="slide-2-discription">

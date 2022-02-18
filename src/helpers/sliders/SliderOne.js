@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React, { Component } from "react";
 import Slider from "react-slick";
 import "./style.scss";
@@ -70,12 +71,15 @@ export default function SliderOne({ props }) {
             <Slider {...settings}>
                 {
                     props.map((el, index) => (
-                        <div className="slide-item-1" key={index}>
-                            <p>Allergies</p>
-                            <div className="slick-slide-1-img-area">
-                                <img src={el} />
+                        <Link key={index} to="/product">
+                            <div className="slide-item-1">
+                                <p>Allergies</p>
+                                <div className="slick-slide-1-img-area">
+                                    <img src={el} />
+                                </div>
                             </div>
-                        </div>
+                        </Link>
+
                     ))
                 }
 

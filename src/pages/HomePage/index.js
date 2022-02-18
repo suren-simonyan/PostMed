@@ -5,6 +5,7 @@ import img from "../../resourses/images/homePageBanner.png";
 import AffordableSvgIcon from "../../resourses/icons/AffordableSvgIcon";
 import TimeSvgIcon from "../../resourses/icons/TimeSvgIcon";
 import ConvenientSvgIcon from "../../resourses/icons/ConvenientSvgIcon";
+import ShippingBanner from "../../helpers/navigationBanner/ShippingBanner"
 import "./style.scss"
 
 import boxImg from "../../resourses/images/box photo 1.png";
@@ -20,6 +21,7 @@ import img6 from "../../resourses/images/[Downloader 1.png";
 import img7 from "../../resourses/images/70ea37567c320595d458002507b84b3bff6a977e29eebb982c797ebee734eeab 1 (2).png";
 import img8 from "../../resourses/images/70ea37567c320595d458002507b84b3bff6a977e29eebb982c797ebee734eeab 1 (1).png";
 import img9 from "../../resourses/images/70ea37567c320595d458002507b84b3bff6a977e29eebb982c797ebee734eeab 1.png";
+import HomepageSlider from "../../components/homePage/homePageSlider";
 
 
 const arr1 = [img1, img2, img3, img1, img2, img3, img1, img2, img3];
@@ -29,7 +31,9 @@ export const arr3 = [img7, img8, img9, img8, img7, img9, img8, img9, img7,]
 export default function HomePage() {
     return (
         <main className="home-page">
-            <HomePageBanner props={{ image: img }} />
+            <ShippingBanner/>
+            <HomepageSlider props={{ image: img }}/>
+            {/* <HomePageBanner props={{ image: img }} /> */}
             <section className="home-page-section">
                 <SliderOne props={arr1} />
                 <div className="home-page-box-container">

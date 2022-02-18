@@ -28,3 +28,24 @@ nav.navigation-banner{
         }
     }
 }
+
+nav.shipping-banner{
+    padding: 0 2.77778% 16px;
+    .shipping-banner-inner{
+        width: 100%;
+        background-color: rgba(18, 216, 168, 0.3);
+        padding: 4px;
+        text-align: center;
+        border-radius: 10px;
+        p{
+            margin: 0;
+            color: #281E78;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        padding: 0 4.26666% 16px;
+    }
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}

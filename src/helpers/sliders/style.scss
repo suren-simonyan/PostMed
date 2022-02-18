@@ -48,8 +48,11 @@
                     > div {
                         overflow: hidden;
                         width: 184px;
+                        a{
+                            text-decoration: none;
+                        }
 
-                        > .slide-item-1 {
+                         .slide-item-1 {
                             display: flex !important;
                             justify-content: end;
                             align-items: flex-end;
@@ -63,6 +66,7 @@
                                 top: 16px;
                                 left: 16px;
                                 font-size: 16px;
+                                color: #000000;
                             }
                             .slick-slide-1-img-area {
                                 width: fit-content;
@@ -92,9 +96,11 @@
                                 font-weight: bold;
                                 font-size: 16px;
                                 margin-bottom: 0;
+                                color: #000000;
                             }
                             .item-size {
                                 margin-bottom: 8px;
+                                color: #000000;
                             }
                             .item-price {
                                 margin-bottom: 8px;
@@ -107,6 +113,7 @@
                                 .sale-price {
                                     text-decoration-line: line-through;
                                     margin-left: 8px;
+                                    color: #000000;
                                 }
                             }
                             > div {
@@ -164,7 +171,7 @@
                             > div {
                                 overflow: hidden;
                                 width: 136px;
-                                > .slide-item-1 {
+                                 .slide-item-1 {
                                     width: 136px;
                                     height: 136px;
                                     .slick-slide-1-img-area {
@@ -175,7 +182,7 @@
                                         }
                                     }
                                 }
-                                > .slide-item-2{
+                                .slide-item-2{
                                     width: 136px;
                                     .slick-slide-2-img-area{
                                         max-width: 110px;

@@ -1,5 +1,5 @@
 import HomePageBanner from "../../components/homePage/HomePageBanner";
-import NavigationBanner from "../../helpers/navigationBanner";
+import NavigationBanner from "../../helpers/navigationBanner/navigationBanner";
 import SliderTwo from "../../helpers/sliders/SliderTwo";
 import img from "../../resourses/images/homePageBanner.png";
 import { arr3 } from "../HomePage";
