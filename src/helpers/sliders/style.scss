@@ -48,11 +48,12 @@
                     > div {
                         overflow: hidden;
                         width: 184px;
-                        a{
+                        border-radius: 11px;
+                        a {
                             text-decoration: none;
                         }
 
-                         .slide-item-1 {
+                        .slide-item-1 {
                             display: flex !important;
                             justify-content: end;
                             align-items: flex-end;
@@ -60,7 +61,6 @@
                             height: 184px;
                             position: relative;
                             background-color: #f0f3f5;
-                            border-radius: 10px;
                             > p {
                                 position: absolute;
                                 top: 16px;
@@ -80,7 +80,7 @@
                             }
                         }
                         .slide-item-2 {
-                            width: 184px;
+                            width: 100%;
                             height: 100%;
                             padding: 16px;
                             background-color: #f0f3f5;
@@ -91,6 +91,7 @@
                             }
                         }
                         .slide-2-discription {
+                            width: 100%;
                             .item-name {
                                 margin-top: 8px;
                                 font-weight: bold;
@@ -135,7 +136,6 @@
                             > button {
                                 width: 100%;
                                 margin-top: 16px;
-                                margin-bottom: 8px;
                                 padding: 12px;
                                 border: 1px solid #281e78;
                                 border-radius: 10px;
@@ -153,14 +153,34 @@
         }
     }
     &.slider-2 {
-        .slick-slider button.slick-arrow.slick-prev {
-            top: 49%;
+        .title{
+            margin-bottom: 22px;
+        }
+        .slick-slider {
+            button.slick-arrow.slick-prev {
+                top: 49%;
+            }
+            .slick-list {
+                padding: 8px 0;
+                .slick-track {
+                    .slick-slide {
+                        > div {
+                            width: 198px;
+                            padding: 8px;
+                            transition: 0.3s;
+                            &:hover{
+                                box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.144);
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
     @media (max-width: 1024px) {
         padding-top: 72px;
-        .title{
+        .title {
             padding-right: 4.26%;
         }
         @media (max-width: 768px) {
@@ -171,7 +191,7 @@
                             > div {
                                 overflow: hidden;
                                 width: 136px;
-                                 .slide-item-1 {
+                                .slide-item-1 {
                                     width: 136px;
                                     height: 136px;
                                     .slick-slide-1-img-area {
@@ -182,18 +202,19 @@
                                         }
                                     }
                                 }
-                                .slide-item-2{
+                                .slide-item-2 {
                                     width: 136px;
-                                    .slick-slide-2-img-area{
+                                    .slick-slide-2-img-area {
                                         max-width: 110px;
                                         max-height: 110px;
-                                        img{
+                                        img {
                                             object-fit: contain;
                                         }
                                     }
                                 }
                                 .slide-2-discription {
-                                    .item-name, .item-size  {
+                                    .item-name,
+                                    .item-size {
                                         font-size: 14px;
                                     }
                                     .item-price {

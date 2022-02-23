@@ -13,6 +13,7 @@ import MobileFiltersButtonSvgIcon from "../../resourses/icons/MobileFiltersButto
 import ShippingBanner from "../../helpers/navigationBanner/ShippingBanner";
 import { useEffect, useRef, useState } from "react";
 import { MusicOffOutlined } from "@mui/icons-material";
+import ProductItem from "../../components/product/ProductItem";
 
 
 const nav = ["Home", "page-2", "page-3", "this page"]
@@ -154,36 +155,10 @@ export default function Products() {
                         <div className="products-container">
                             {
                                 arr3.map((el, i) => (
-                                    <div
-                                        className="product"
+                                    <ProductItem
+                                        el={el}
                                         key={i}
-                                    >
-                                        <div
-                                            className="product-item"
-                                        // className={!(i % 2) ? "product-item" : "product-item opacity-5"}
-                                        >
-                                            <div className="product-img-area">
-                                                <img src={el} />
-                                            </div>
-                                        </div>
-                                        <div
-                                            className="product-discription"
-                                        // className={!(i % 2) ? "product-discription" : "product-discription opacity-5"}
-                                        >
-                                            <p className="item-name" >Magnidoz</p>
-                                            <p className="item-size">120 mg/5 ml</p>
-                                            <p className="item-price">
-                                                <span className="price">1200 ֏</span>
-                                                <span className="sale-price">2000 ֏</span>
-                                            </p>
-                                            <div>
-                                                <button className="item-btn">item</button>
-                                                <button className="pack-btn">Pack</button>
-                                            </div>
-                                            {/* <p className="out-of-stock">out-of-stock</p> */}
-                                        </div>
-                                        <button>Add to Cart</button>
-                                    </div>
+                                    />
                                 ))
                             }
                         </div>
