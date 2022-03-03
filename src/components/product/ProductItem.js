@@ -1,6 +1,10 @@
+import { useState } from "react"
+import HeartActiveSvgIcon from "../../resourses/icons/HeartActiveSvgIcon"
+import HeartSvgIcon from "../../resourses/icons/HeartSvgIcon"
 import "./style.scss"
 
 export default function ProductItem({ el }) {
+    const [wish, setWish] = useState(false)
     return (
         <div
             className="product"
@@ -11,6 +15,11 @@ export default function ProductItem({ el }) {
             >
                 <div className="product-img-area">
                     <img src={el} />
+                </div>
+                <div className= {!wish? "product-item-heart" : "product-item-heart wished"}
+                    onClick={()=>{setWish(!wish)}}
+                >
+                    {wish ? <HeartActiveSvgIcon/> : <HeartSvgIcon />}
                 </div>
             </div>
             <div
