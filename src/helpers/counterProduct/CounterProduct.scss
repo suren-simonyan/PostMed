@@ -1,0 +1,26 @@
+.product_counter {
+
+    .counter_btn {
+        width: 40px;
+        height: 40px;
+        background-color: var(--blue-gray);
+        color: var(--gray-dark);
+        border-radius: 50%;
+        border: none;
+    }
+
+    input {
+        width: 48px;
+        height: 40px;
+        margin: 0 8px;
+        font-size: 16px;
+        color: var(--gray-dark);
+        border: 1px solid var(--gray-light);
+        border-radius: 3px;
+        text-align: center;
+
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+    }
+}
