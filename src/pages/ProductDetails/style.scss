@@ -120,8 +120,9 @@
         color: var(--blue);
         cursor: pointer;
 
-        &:before {
-            content: "";
+        i {
+            margin-right: 10px;
+            font-size: 24px;
         }
     }
 }
@@ -191,4 +192,24 @@
 
 .counter_wrap {
     margin-left: 42px;
+}
+
+.product_add_card {
+    display: flex;
+    align-items: center;
+
+    .btn_main {
+        max-width: 338px;
+        width: 70%;
+
+        &:hover {
+            background-color: var(--blue-light);
+        }
+    }
+
+    i {
+        margin-left: 20px;
+        font-size: 21px;
+        cursor: pointer;
+    }
 }

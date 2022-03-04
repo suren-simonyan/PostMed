@@ -18,8 +18,10 @@ export default function ProductDetails() {
     const [count, setCount] = useState(1);
 
     const changeCount = (value) => {
-        if (count > 0) {
+        if (value > 0) {
             setCount(value);
+        } else {
+            count > 0 && setCount(value);
         }
     }
 
@@ -110,7 +112,10 @@ export default function ProductDetails() {
                             </div>
                             <div className="product_add_card">
                                 <button className="btn_main">Add to Card</button>
-                                <i className="add_favorite"></i>
+                                <i class="icon-Heart">
+                                    <span class="path1"></span>
+                                    <span class="path2"></span>
+                                </i>
                             </div>
                         </div>
 
