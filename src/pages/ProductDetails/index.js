@@ -17,14 +17,6 @@ export default function ProductDetails() {
     const [activeImg, setActiveImg] = useState(img1);
     const [count, setCount] = useState(1);
 
-    const changeCount = (value) => {
-        if (value > 0) {
-            setCount(value);
-        } else {
-            count > 0 && setCount(value);
-        }
-    }
-
     return (
         <main className="product-details">
             <NavigationBanner
@@ -106,7 +98,7 @@ export default function ProductDetails() {
                                     <button className="prod_info_btn selected">item</button>
                                     <button className="prod_info_btn">Pack</button>
                                     <div className="counter_wrap">
-                                        <CounterProduct count={count} changeCount={changeCount} />
+                                        <CounterProduct count={count} setCount={setCount} />
                                     </div>
                                 </div>
                             </div>
