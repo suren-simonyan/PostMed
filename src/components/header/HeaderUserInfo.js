@@ -5,6 +5,8 @@ import BagSvgIcon from "../../resourses/icons/BagSvgIcon"
 import SettingsSvgIcon from "../../resourses/icons/SettingsSvgIcon";
 import SignInSvgIcon from "../../resourses/icons/SignInSvgIcon";
 import SignInPopUp from "../../helpers/popUps/SignInPopUp";
+import "./style.scss";
+import { Link } from "react-router-dom";
 
 
 export default function HeaderUserInfo() {
@@ -28,6 +30,12 @@ export default function HeaderUserInfo() {
 
     return (
         <div className="header-actions">
+            <a className="header_favorite">
+                <i className="icon-Heart">
+                    <span className="path1"></span>
+                    <span className="path2"></span>
+                </i>
+            </a>
             {
                 signIn ? <div className="header-profile">
                     <Button
@@ -37,7 +45,7 @@ export default function HeaderUserInfo() {
                         aria-expanded={open ? 'true' : undefined}
                         aria-haspopup="true"
                         onClick={handleToggle}
-                        style={{width: "40px"}}
+                        style={{ width: "40px" }}
                     >
                         <ProfileSvgIcon />
                     </Button>
@@ -100,11 +108,13 @@ export default function HeaderUserInfo() {
                 </div>
             }
             <div className="header-bag">
+                <Link to="/bag">
                 <Button
-                        style={{width: "40px"}}
+                    style={{ width: "40px" }}
                 >
                     <BagSvgIcon />
                 </Button>
+                </Link>
             </div>
             <Dialog
                 open={signInPopUp}

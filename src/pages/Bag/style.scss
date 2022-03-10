@@ -1,0 +1,184 @@
+.bag {
+    width: 100%;
+    margin: 0 auto 200px;
+    padding: 0 7.5%;
+
+    h1 {
+        margin: 40px 0 24px;
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 700;
+        color: var(--blue);
+    }
+}
+
+.bag_select_all {
+    margin-bottom: 16px;
+
+    .checkbox_text {
+        font-size: 18px;
+    }
+}
+
+.bag_inner {
+    display: flex;
+}
+
+.bag_items_wrap {
+    width: calc(73% - 56px);
+    margin-right: 56px;
+}
+
+.bag_sidebar {
+    max-width: 360px;
+    width: 27%;
+}
+
+.bag_shipping {
+    margin-bottom: 32px;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+
+    h4 {
+        margin-bottom: 24px;
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 700;
+        color: var(--blue);
+    }
+}
+
+.bag_shipping_info {
+    display: flex;
+    justify-content: space-between;
+
+    > span {
+        font-size: 18px;
+        line-height: 24px;
+        white-space: nowrap;
+        color: var(--blue);
+    }
+
+    & + .bag_shipping_info {
+        margin-top: 24px;
+    }
+}
+
+.bag_shipping_info_sub {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+
+    > span {
+        margin-top: 8px;
+        padding-left: 30px;
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--gray);
+    }
+}
+
+.bag_shipping_home {
+    position: relative;
+    margin-top: 8px;
+    padding-left: 30px;
+
+    > span {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 700;
+        color: var(--blue);
+
+        &:after {
+            content: "\e927";
+            margin-left: 10px;
+            font-family: "icomoon";
+            font-size: 12px;
+            color: currentColor;
+            transform: rotateZ(-90deg);
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .bag {
+        padding: 0 40px;
+    }
+
+    .bag_items_wrap {
+        width: 68%;
+        margin-right: 4%;
+    }
+    
+    .bag_sidebar {
+        max-width: 360px;
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .bag {
+        padding: 0 15px;
+    }
+    
+    .bag_sidebar {
+        width: 44%;;
+    }
+
+    .bag_shipping {
+        padding: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .bag {
+        h1 {
+            margin: 8px 0 16px;
+        }
+    }
+
+    .bag_inner {
+        flex-direction: column;
+    }
+
+    .bag_items_wrap {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 14px;
+    }
+
+    .bag_select_all {
+    
+        .checkbox_text {
+            font-size: 16px;
+        }
+    }
+
+    .bag_sidebar {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .bag_shipping_info_sub {
+
+        > span {
+            font-size: 14px;
+        }
+    }
+
+    .bag_shipping_info {
+    
+        > span {
+            font-size: 16px;
+        }
+
+        & .bag_shipping_info {
+            margin-top: 20px;
+        }
+    }
+
+}

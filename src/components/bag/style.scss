@@ -1,0 +1,222 @@
+.bag_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    border-top: 1px solid var(--gray-blue-line);
+
+    .checkbox {
+        width: 16px;
+        height: 16px;
+        margin: auto;
+        padding-left: 0;
+    }
+}
+
+.bag_prod_info {
+    display: flex;
+}
+
+.bag_prod_name {
+    h4 {
+        margin-bottom: 8px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        color: var(--black);
+    }
+
+    h5,
+    span {
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--black);
+    }
+
+    h5 {
+        margin-bottom: 8px;
+    }
+}
+
+.bag_prod_img {
+    display: flex;
+    width: 128px;
+    height: 128px;
+    padding: 11px;
+    margin: 0 16px;
+    background-color: var(--blue-gray);
+    border-radius: 10px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.bag_prod_count,
+.bag_prod_price_fav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // align-items: center;
+}
+
+.bag_prod_price {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+
+    .new_price {
+        margin-bottom: 8px;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+
+        color: var(--blue);
+    }
+
+    .old_price {
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--black);
+        text-decoration: line-through;
+    }
+}
+
+.bag_fav_remove {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+
+    i {
+        cursor: pointer;
+    }
+
+    .icon-Heart {
+        margin-right: 18px;
+    }
+}
+
+// Bag Summery
+.bag_summery {
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+
+    h4 {
+        margin-bottom: 24px;
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 700;
+        color: var(--blue);
+    }
+
+    .main_btn {
+        width: 100%;
+
+        &:hover {
+            background-color: var(--blue-light);
+        }
+    }
+}
+
+.bag_summery_item {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .gab_summery_price {
+        color: var(--blue);
+    }
+
+    & + .bag_summery_item {
+        margin-top: 16px;
+    }
+}
+
+.bag_summery_total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0;
+
+    span {
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: 700;
+        color: var(--black);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .bag_item {
+        flex-wrap: wrap;
+    }
+
+    .bag_summery {
+        padding: 16px;
+    }
+
+    .bag_prod_count {
+        order: 2;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 16px;
+        padding-left: 30px;
+    }
+
+    .product_type_inner_btn {
+        order: -1;
+    }
+
+    .bag_prod_price_fav {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bag_item {
+        padding: 15px 0 24px;
+    }
+
+    .bag_prod_name {
+        h4 {
+            font-size: 14px;
+        }
+
+        h5,
+        span {
+            font-size: 14px;
+        }
+    }
+    
+    .bag_prod_img {
+        width: 106px;
+        height: 106px;
+        padding: 9px;
+    }
+    
+    .prod_info_btn {
+        min-width: 64px;
+        height: 32px;
+    }
+
+    .bag_summery_item {
+    
+        span {
+            font-size: 16px;
+        }
+    }
+    
+    .bag_summery_total {
+        
+        span {
+            font-size: 18px;
+        }
+    }
+}

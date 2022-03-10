@@ -305,9 +305,11 @@ header {
                         font-weight: bold;
                     }
                     .header-menu-active-subSubcategories {
+                        display: block;
                         margin-top: 0;
                         margin-bottom: 8px;
                         color: #281e78;
+                        text-decoration: none;
                     }
                 }
             }
@@ -397,4 +399,15 @@ header {
             }
         }
     }
+}
+
+@media screen and (max-width: 980px) {
+
+    header {
+
+        nav {
+            padding: 16px 15px;
+        }
+    }
+
 }

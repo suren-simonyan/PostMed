@@ -1,12 +1,22 @@
 .product_counter {
+    display: flex;
 
     .counter_btn {
+        display: flex;
         width: 40px;
         height: 40px;
         background-color: var(--blue-gray);
         color: var(--gray-dark);
         border-radius: 50%;
         border: none;
+
+        i {
+            margin: auto;
+        }
+
+        .icon-Minus {
+            font-size: 1.8px;
+        }
     }
 
     input {
@@ -23,4 +33,22 @@
             -webkit-appearance: none;
         }
     }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .product_counter {
+
+        .counter_btn {
+            width: 32px;
+            height: 32px;
+        }
+
+        input {
+            width: 40px;
+            height: 32px;
+        }
+
+    }
+
 }

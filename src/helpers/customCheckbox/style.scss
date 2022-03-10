@@ -1,0 +1,47 @@
+.checkbox {
+    position: relative;    
+    display: block;
+    padding-left: 30px;
+    cursor: pointer;
+
+    .checkbox_text {
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--black);
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        display: flex;
+        width: 18px;
+        height: 18px;
+        border: 2px solid var(--dark);
+        border-radius: 2px;
+        transform: translateY(-50%);
+
+        &:before {
+            font-family: "icomoon";
+            font-size: 10px;
+            color: var(--white);
+        }
+    }
+
+    input {
+        position: absolute;
+        width: 0;
+        height: 0;
+
+        &:checked {
+
+            & + .checkmark {
+                background-color: var(--dark);
+
+                &:before {
+                    content: '\e928';
+                }
+            }
+        }
+    }
+}

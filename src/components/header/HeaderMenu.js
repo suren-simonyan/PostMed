@@ -7,6 +7,7 @@ import MedicineSvgIcon from "../../resourses/icons/MedicineSvgIcon";
 import ArrowRight from "../../resourses/icons/ArrowRight";
 import img1 from "../../resourses/images/medicineImg1.png"
 import img2 from "../../resourses/images/medicineImg2.png"
+import { Link } from "react-router-dom";
 
 
 const categoryesData = [
@@ -179,11 +180,11 @@ export default function HeaderMenu({ open, setOpen }) {
                                         {
                                             item.children.map((el, i) => {
                                                 return (
-                                                    <p 
+                                                    <Link to="/products" 
                                                     className="header-menu-active-subSubcategories"
                                                     key={i}>
                                                         {el}
-                                                    </p>
+                                                    </Link>
                                                 )
                                             })
                                         }

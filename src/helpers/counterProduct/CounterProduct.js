@@ -13,9 +13,13 @@ const CounterProduct = ({ count, setCount }) => {
 
     return (
         <div className='product_counter'>
-            <button className="counter_btn" onClick={() => changeCount(count - 1)}>-</button>
+            <button className="counter_btn" onClick={() => changeCount(count - 1)}>
+                <i className="icon-Minus"></i>
+            </button>
             <input type="number" value={count} />
-            <button className="counter_btn" onClick={() => changeCount(count + 1)}>+</button>
+            <button className="counter_btn" onClick={() => changeCount(count + 1)}>
+                <i className="icon-Plus"></i>
+            </button>
         </div>
     );
 };
