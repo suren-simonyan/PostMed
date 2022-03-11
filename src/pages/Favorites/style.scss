@@ -1,0 +1,110 @@
+.favorites {
+    margin: 0 auto 108px;
+    padding: 8px 7.5%;
+
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 700;
+        color: var(--blue);
+    }
+}
+
+.favorites_items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 32px;
+    margin-bottom: 64px;
+}
+
+.favorites_pagination {
+    display: flex;
+
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        color: var(--blue);
+        background-color: transparent;
+        border-radius: 3px;
+        transition: background-color .15s, color .15s;
+        cursor: pointer;
+
+        &:hover,
+        &.selected {
+            color: var(--white);
+            background-color: var(--green);
+        }
+
+        & + span {
+            margin-left: 8px;
+        }
+    }
+
+    .inactive {
+        opacity: .5;
+    }
+
+    .next,
+    .prev {
+
+        &.inactive {
+            opacity: .5;
+        }
+
+        &:hover {
+            opacity: 1;
+
+            i:before {
+                color: var(--white);
+            }
+        }
+    }
+
+    .next {
+        
+        i {
+            transform: rotateZ(180deg);
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .favorites_items {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .favorites {
+        padding: 8px 40px;
+    
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .favorites {
+        padding: 8px 16px;
+    
+        h1 {
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+
+    .favorites_items {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 15px;
+        margin-bottom: 32px;
+    }
+}

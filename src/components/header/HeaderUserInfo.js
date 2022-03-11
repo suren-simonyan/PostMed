@@ -30,12 +30,12 @@ export default function HeaderUserInfo() {
 
     return (
         <div className="header-actions">
-            <a className="header_favorite">
+            <Link to="/favorites" className="header_favorite">
                 <i className="icon-Heart">
                     <span className="path1"></span>
                     <span className="path2"></span>
                 </i>
-            </a>
+            </Link>
             {
                 signIn ? <div className="header-profile">
                     <Button

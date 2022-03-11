@@ -77,7 +77,7 @@ header {
                     width: 68px;
                     height: 46px;
                     cursor: pointer;
-                    &:last-of-type{
+                    &:last-of-type {
                         display: none;
                     }
                 }
@@ -135,8 +135,8 @@ header {
                     transform: rotate(45deg);
                 }
             }
-            .header-bag{
-                .MuiButton-root{
+            .header-bag {
+                .MuiButton-root {
                     padding: 0;
                 }
             }
@@ -347,45 +347,53 @@ header {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    header {
+        .header-top-panel {
+            padding: 7px 40px;
+        }
+    }
+}
+
 @media screen and (max-width: 1024px) {
     header {
-        .header-top-panel{
+        .header-top-panel {
             padding: 11.2px 4.27%;
         }
         nav {
             flex-wrap: wrap;
             padding: 16px 4.26% 16px;
-            .header-burger-logo{
+            .header-burger-logo {
                 order: 1;
-                .header-menu{
-                    .header-burger{
-                        svg{
+                .header-menu {
+                    .header-burger {
+                        svg {
                             width: 40px;
                             height: 40px;
                         }
                     }
                 }
-                .header-logo{
+                .header-logo {
                     height: 40px;
-                    svg{
+                    svg {
                         width: 132px;
                     }
                 }
             }
-            .header-search{
+            .header-search {
                 order: 3;
                 margin-top: 24px;
                 width: 100%;
-                .header-search-area{
+                .header-search-area {
                     width: 100%;
-                    .search-icon{
+                    .search-icon {
                         top: 11px;
                         right: 13px;
-                        svg{
-                            &:first-of-type{
+                        svg {
+                            &:first-of-type {
                                 display: none;
                             }
-                            &:last-of-type{
+                            &:last-of-type {
                                 display: block;
                                 width: 26px;
                                 height: 26px;
@@ -394,7 +402,7 @@ header {
                     }
                 }
             }
-            .header-actions{
+            .header-actions {
                 order: 2;
             }
         }
@@ -402,12 +410,9 @@ header {
 }
 
 @media screen and (max-width: 980px) {
-
     header {
-
         nav {
             padding: 16px 15px;
         }
     }
-
 }

@@ -3,8 +3,8 @@ import HeartActiveSvgIcon from "../../resourses/icons/HeartActiveSvgIcon"
 import HeartSvgIcon from "../../resourses/icons/HeartSvgIcon"
 import "./style.scss"
 
-export default function ProductItem({ el }) {
-    const [wish, setWish] = useState(false)
+export default function ProductItem({ el, wish }) {
+
     return (
         <div
             className="product"
@@ -17,7 +17,7 @@ export default function ProductItem({ el }) {
                     <img src={el} />
                 </div>
                 <div className= {!wish? "product-item-heart" : "product-item-heart wished"}
-                    onClick={()=>{setWish(!wish)}}
+                    // onClick={()=>{setWish(!wish)}}
                 >
                     {wish ? <HeartActiveSvgIcon/> : <HeartSvgIcon />}
                 </div>
