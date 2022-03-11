@@ -34,12 +34,12 @@ const BagProduct = () => {
                 </div>
                 <div className="bag_fav_remove">
                     <i className="icon-Heart">
-                        <span class="path1"></span>
-                        <span class="path2"></span>
+                        <span className="path1"></span>
+                        <span className="path2"></span>
                     </i>
                     <i className="icon-Garbage">
-                        <span class="path1"></span>
-                        <span class="path2"></span>
+                        <span className="path1"></span>
+                        <span className="path2"></span>
                     </i>
                 </div>
             </div>

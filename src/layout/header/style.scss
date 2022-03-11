@@ -1,9 +1,14 @@
 header {
     .header-top-panel {
-        display: flex;
-        justify-content: space-between;
-        background-color: #f0f3f5;
-        padding: 7px 7.5%;
+        background-color: var(--blue-gray);
+        .header-top-panel-inner {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1264px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 7px 20px;
+        }
         .top-panel-contact-number {
             display: flex;
             grid-column-gap: 8px;
@@ -29,7 +34,10 @@ header {
     nav {
         display: flex;
         justify-content: space-between;
-        padding: 16px 7.5%;
+        max-width: 1264px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 16px 20px;
         .header-burger-logo {
             display: flex;
             justify-content: space-between;
@@ -144,7 +152,10 @@ header {
     }
 }
 .search-popup {
-    padding: 32px 5.5%;
+    max-width: 1264px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 32px 20px;
     .search-popup-title {
         font-size: 22px;
         line-height: 32px;
@@ -347,19 +358,8 @@ header {
     }
 }
 
-@media screen and (max-width: 1200px) {
-    header {
-        .header-top-panel {
-            padding: 7px 40px;
-        }
-    }
-}
-
 @media screen and (max-width: 1024px) {
     header {
-        .header-top-panel {
-            padding: 11.2px 4.27%;
-        }
         nav {
             flex-wrap: wrap;
             padding: 16px 4.26% 16px;

@@ -1,6 +1,8 @@
 .favorites {
     margin: 0 auto 108px;
-    padding: 8px 7.5%;
+    max-width: 1264px;
+    width: 100%;
+    padding: 8px 20px;
 
     h1 {
         font-size: 32px;
@@ -82,7 +84,6 @@
     }
 
     .favorites {
-        padding: 8px 40px;
     
         h1 {
             font-size: 32px;

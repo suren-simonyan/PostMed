@@ -1,6 +1,8 @@
 .order_confirmation {
+    max-width: 1264px;
+    width: 100%;
     margin: 0 auto 120px;
-    padding: 64px 7.5%;
+    padding: 64px 20px;
 
     h1 {
         display: flex;
@@ -83,7 +85,7 @@
 
 .order_confirmation_info {
     max-height: 0;
-    transition: max-height 240ms;
+    transition: max-height 500ms;
 
     &.show_info {
         max-height: 728px;
@@ -270,9 +272,76 @@
     }
 }
 
+.mobile_deliver_status {
+
+    h5 {
+        margin-bottom: 16px;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 700;
+
+    }
+}
+
+.mobile_deliver_status_sub {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    > span {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .deliver_verified {
+        color: var(--blue);
+    }
+
+    i {
+        position: relative;
+        font-size: 20px;
+
+        &:before {
+            color: var(--blue);
+        }
+    }
+    
+    .prev_status {
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 26px;
+            left: 8px;
+            display: block;
+            width: 2px;
+            height: 16px;
+            background-color: var(--blue);
+        }
+        opacity: .5;
+    }
+
+    .deliver_inprocess {
+        font-weight: 700;
+        color: #7B61FF;
+    }
+
+    & + .mobile_deliver_status_sub {
+        margin-top: 24px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .order_confirmation {
+        padding: 40px 20px 80px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     
     .order_confirmation {
+        padding: 20px 16px 16px;
 
         h1 {
             margin-bottom: 24px;
@@ -361,9 +430,47 @@
     }
     
     .order_confirmation_product_img {
+        flex-shrink: 0;
+        margin-right: 8px;
         width: 106px;
         height: 106px;
         padding: 9px;
     }
-    
+
+    .order_confirmation_product_info {
+
+        h4 {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+    }
+
+    .order_confirmation_product_sub {
+        justify-content: space-between;
+
+        span {
+            font-size: 14px;
+
+            &:first-child {
+                min-width: initial;
+                margin-right: 8px;
+            }
+        }
+
+        .info_detail {
+            text-align: right;
+        }
+
+        & + .order_confirmation_product_sub {
+            margin-top: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .order_confirmation_product_info {
+        width: calc(100% - 114px);
+    }
+
 }

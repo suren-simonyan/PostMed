@@ -1,7 +1,8 @@
 .bag {
+    max-width: 1264px;
     width: 100%;
     margin: 0 auto 200px;
-    padding: 0 7.5%;
+    padding: 0 20px;
 
     h1 {
         margin: 40px 0 24px;
@@ -104,9 +105,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .bag {
-        padding: 0 40px;
-    }
 
     .bag_items_wrap {
         width: 68%;
@@ -120,9 +118,6 @@
 }
 
 @media screen and (max-width: 992px) {
-    .bag {
-        padding: 0 15px;
-    }
     
     .bag_sidebar {
         width: 44%;;
@@ -136,6 +131,8 @@
 @media screen and (max-width: 768px) {
 
     .bag {
+        padding: 0 16px;
+
         h1 {
             margin: 8px 0 16px;
         }

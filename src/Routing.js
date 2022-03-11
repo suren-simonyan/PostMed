@@ -4,6 +4,7 @@ import Header from "./layout/header/header";
 import Bag from "./pages/Bag";
 import Favorites from "./pages/Favorites";
 import HomePage from "./pages/HomePage";
+import MyAccount from "./pages/MyAccount";
 import OrderConfirmation from "./pages/OrderConfirmation";
 import Products from "./pages/Product";
 import ProductDetails from "./pages/ProductDetails";
@@ -21,6 +22,7 @@ export default function Routing() {
                 <Route path="/bag" exact element={<Bag />} />
                 <Route path="/favorites" exact element={<Favorites />} />
                 <Route path="/order-confirmation" exact element={<OrderConfirmation />} />
+                <Route path="/my-account" exact element={<MyAccount />} />
             </Routes>
             <Footer />
         </BrowserRouter>

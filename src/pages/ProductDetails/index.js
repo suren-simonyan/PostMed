@@ -74,10 +74,10 @@ export default function ProductDetails() {
                                 <form className="download_description">
                                     <input type="file" id="upload" hidden />
                                     <label for="upload">
-                                        <i class="icon-Download">
-                                            <span class="path1"></span>
-                                            <span class="path2"></span>
-                                            <span class="path3"></span>
+                                        <i className="icon-Download">
+                                            <span className="path1"></span>
+                                            <span className="path2"></span>
+                                            <span className="path3"></span>
                                         </i>
                                         Download Desribtion (pdf)
                                     </label>
@@ -109,9 +109,9 @@ export default function ProductDetails() {
                             </div>
                             <div className="product_add_card">
                                 <button className="btn_main">Add to Card</button>
-                                <i class="icon-Heart">
-                                    <span class="path1"></span>
-                                    <span class="path2"></span>
+                                <i className="icon-Heart">
+                                    <span className="path1"></span>
+                                    <span className="path2"></span>
                                 </i>
                             </div>
                         </div>
