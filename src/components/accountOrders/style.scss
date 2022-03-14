@@ -1,4 +1,8 @@
 .account_orders {
+    flex-grow: 1;
+    max-width: 808px;
+    width: calc(100% - 313px);
+    margin-left: auto;
     
     h3 {
         margin-bottom: 40px;

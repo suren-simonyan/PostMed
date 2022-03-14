@@ -1,0 +1,34 @@
+.account_adresses {
+    max-width: 808px;
+    width: 100%;
+    margin: 0 auto;
+
+    h3 {
+        margin-bottom: 40px;
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 700;
+        color: var(--blue);
+    }
+}
+
+.account_adresses_items_wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+.account_adresses_inner {
+
+    h4 {
+        margin-bottom: 24px;
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 700;
+        color: var(--blue);
+    }
+
+    & + .account_adresses_inner {
+        margin-top: 40px;
+    }
+}

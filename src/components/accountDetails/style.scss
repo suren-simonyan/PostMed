@@ -36,6 +36,7 @@
 
 .account_details_info {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding-right: 30px;
 
@@ -56,4 +57,29 @@
     & + .account_details_info {
         margin-top: 24px;
     }
+}
+
+@media screen and (max-width: 768px) { 
+
+    .account_details {
+
+        h3 {
+            display: none;
+        }
+    }
+
+    .account_details_info {
+        padding-right: 0;
+    
+        span, 
+        strong {
+            font-size: 14px;
+        }
+
+        span {
+            width: 100%;
+            margin-bottom: 8px;
+        }
+    }
+
 }

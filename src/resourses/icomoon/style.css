@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?erl3tz');
-  src:  url('fonts/icomoon.eot?erl3tz#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?erl3tz') format('truetype'),
-    url('fonts/icomoon.woff?erl3tz') format('woff'),
-    url('fonts/icomoon.svg?erl3tz#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?3tt46y');
+  src:  url('fonts/icomoon.eot?3tt46y#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?3tt46y') format('truetype'),
+    url('fonts/icomoon.woff?3tt46y') format('woff'),
+    url('fonts/icomoon.svg?3tt46y#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,39 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-visa:before {
+  content: "\e93c";
+}
+.icon-master:before {
+  content: "\e93d";
+}
+.icon-Branch .path1:before {
+  content: "\e938";
+  color: rgb(40, 30, 120);
+}
+.icon-Branch .path2:before {
+  content: "\e939";
+  margin-left: -0.9306640625em;
+  color: rgb(18, 216, 168);
+}
+.icon-Home-alt .path1:before {
+  content: "\e93a";
+  color: rgb(40, 30, 120);
+}
+.icon-Home-alt .path2:before {
+  content: "\e93b";
+  margin-left: -1em;
+  color: rgb(18, 216, 168);
+}
+.icon-back-alt .path1:before {
+  content: "\e936";
+  color: rgb(40, 30, 120);
+}
+.icon-back-alt .path2:before {
+  content: "\e937";
+  margin-left: -1.0400390625em;
+  color: rgb(18, 216, 168);
+}
 .icon-Box1 .path1:before {
   content: "\e930";
   color: rgb(40, 30, 120);

@@ -1,0 +1,101 @@
+.address_item {
+    min-width: 253px;
+    height: 168px;
+    padding: 24px;
+    color: var(--black);
+    background-color: var(--blue-gray);
+    border-radius: 5px;
+    cursor: pointer;
+
+    h5 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        color: inherit;
+
+        i {
+            margin-right: 10px;
+            font-size: 22px;
+        }
+    }
+
+    p {
+        margin-bottom: 32px;
+        font-size: 16px;
+        line-height: 24px;
+        color: inherit;
+
+        strong {
+            margin-right: 8px;
+        }
+    }
+
+    .custom_radio_title {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .custom_radio_checkmark {
+        border-color: var(--blue);
+    }
+
+    &.address_selected,
+    &:hover {
+        color: var(--white);
+        background-color: var(--green);
+
+        i {
+            span:before {
+                color: inherit;
+            }
+        }
+
+        .custom_radio_title {
+            color: inherit;
+        }
+        
+        .custom_radio_checkmark {
+            border-color: currentColor;
+
+            &:before {
+                background-color: currentColor;
+            }
+        }
+    }
+}
+
+.address_nonSelected {
+    color: var(--white);
+    background-color: var(--gray);
+
+    i {
+        span:before {
+            color: inherit;
+        }
+    }
+
+    .custom_radio_title {
+        color: inherit;
+    }
+    
+    .custom_radio_checkmark {
+        border-color: currentColor;
+
+        &:before {
+            background-color: currentColor;
+        }
+    }
+}
+
+.address_item_choosel_del {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    i {
+        font-size: 24px;
+    }
+}

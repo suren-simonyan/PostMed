@@ -4,6 +4,13 @@ import './style.scss';
 const AccountDetails = () => {
     return (
         <section className='account_details'>
+            <span className="mobile_back_alt">
+                <i className="icon-back-alt">
+                    <span className="path1"></span>
+                    <span className="path2"></span>
+                </i>
+                <span>My Account</span>
+            </span>
             <h3>Account Details</h3>
 
             <div className="account_details_sub">

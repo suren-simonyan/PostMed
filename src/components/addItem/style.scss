@@ -1,0 +1,28 @@
+.add_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 253px;
+    height: 168px;
+    padding: 24px;
+    color: var(--black);
+    background-color: var(--blue-gray);
+    border-radius: 5px;
+    cursor: pointer;
+
+    i {
+        margin-bottom: 16px;
+        font-size: 64px;
+        color: var(--gray);
+    }
+
+    &:hover {
+        color: var(--white);
+        background-color: var(--green);
+
+        i:before {
+            color: var(--white);
+        }
+    }
+}

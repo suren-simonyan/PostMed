@@ -1,5 +1,6 @@
 .account_nav {
     min-width: 289px;
+    margin-right: 24px;
 
     h1 {
         margin-bottom: 24px;
@@ -25,9 +26,11 @@
     display: flex;
     align-items: center;
     padding: 24px;
+    color: var(--black);
     background-color: var(--blue-gray);
     border-radius: 10px;
     transition: background-color .15s;
+    text-decoration: none;
     cursor: pointer;
 
     > span {
@@ -38,6 +41,7 @@
     }
 
     i {
+        width: 28px;
         margin-right: 8px;
         font-size: 24px;
     }
@@ -63,4 +67,21 @@
     & + .account_nav_sub  {
         margin-top: 16px;
     }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .account_nav {
+
+        h1 {
+            margin-bottom: 16px;
+            font-size: 22px;
+            line-height: 32px;
+        }
+
+        h2 {
+            margin-bottom: 32px;
+        }
+    }
+
 }
