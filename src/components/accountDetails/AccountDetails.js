@@ -1,10 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './style.scss';
 
 const AccountDetails = () => {
+    const prevPage = useNavigate();
+
     return (
         <section className='account_details'>
-            <span className="mobile_back_alt">
+            <span className="mobile_back_alt" onClick={() => prevPage("/my-account")}>
                 <i className="icon-back-alt">
                     <span className="path1"></span>
                     <span className="path2"></span>

@@ -40,7 +40,7 @@ const AccountNav = () => {
                     </i>
                     <span>Favorites</span>
                 </NavLink>
-                <NavLink to="/" className="account_nav_sub">
+                <NavLink to="payments-methods" className="account_nav_sub">
                     <i className="icon-Credit-card">
                         <span className="path1"></span>
                         <span className="path2"></span>

@@ -1,0 +1,19 @@
+.payments_methods {
+    max-width: 808px;
+    width: 100%;
+    margin-left: auto;
+
+    h3 {
+        margin-bottom: 40px;
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 700;
+        color: var(--blue);
+    }
+}
+
+.payments_methods_items_wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 24px;
+}

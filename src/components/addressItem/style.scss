@@ -1,5 +1,4 @@
 .address_item {
-    min-width: 253px;
     height: 168px;
     padding: 24px;
     color: var(--black);
@@ -19,6 +18,14 @@
         i {
             margin-right: 10px;
             font-size: 22px;
+        }
+    }
+
+    .bank_card {
+        justify-content: space-between;
+
+        strong {
+            color: var(--blue);
         }
     }
 
@@ -42,10 +49,25 @@
         border-color: var(--blue);
     }
 
+    .icon-visa {
+        font-size: 13px;
+    }
+
+    .icon-master {
+        font-size: 20px;
+    }
+
     &.address_selected,
     &:hover {
         color: var(--white);
         background-color: var(--green);
+
+        .bank_card {
+
+            strong {
+                color: inherit;
+            }
+        }
 
         i {
             span:before {

@@ -11,6 +11,8 @@ import ProductDetails from "./pages/ProductDetails";
 import AccountDetails from './components/accountDetails/AccountDetails';
 import AccountOrders from './components/accountOrders/AccountOrders';
 import AccountAddresses from "./components/accountAddresses/AccountAddresses";
+import PaymentsMethods from "./components/paymentsMethods/PaymentsMethods";
+import Shipping from "./pages/Shipping";
 
 export default function Routing() {
 
@@ -23,12 +25,14 @@ export default function Routing() {
                 <Route path="/product" element={<Products />} />
                 <Route path="/product-details" element={<ProductDetails />} />
                 <Route path="/bag" element={<Bag />} />
+                <Route path="/shipping-method" element={<Shipping />} />
                 <Route path="/favorites" element={<Favorites />} />
                 <Route path="/order-confirmation" element={<OrderConfirmation />} />
                 <Route path="/my-account/*" element={<MyAccount />}>
                     <Route path="account-details" element={<AccountDetails />} />
                     <Route path="my-orders" element={<AccountOrders />} />
                     <Route path="account-addresses" element={<AccountAddresses />} />
+                    <Route path="payments-methods" element={<PaymentsMethods />} />
                 </Route>
             </Routes>
             <Footer />

@@ -26,10 +26,17 @@
 }
 
 .custom_radio_title {
+    display: flex;
+    align-items: center;
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
     color: var(--black);
+
+    i {
+        margin-right: 10px;
+        font-size: 21px;
+    }
 }
 
 .custom_radio_input {

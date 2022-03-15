@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './style.scss';
 import CustomRadio from '../../helpers/customRadio/CustomRadio';
 
-const AddressItem = ({ branch, selected,...rest }) => {
-    
+const AddressItem = ({ branch, bankCard, bankName, selected, ...rest }) => {
+
 
     return (
         <article
@@ -21,6 +21,20 @@ const AddressItem = ({ branch, selected,...rest }) => {
                     </h5>
                     <p><strong>0002</strong>Yerevan, Saryan 22</p>
                 </>
+            ) : branch === 'bankCard' ? (
+                <>
+                    <h5 className='bank_card'>
+                        {bankCard === 'visa' ? (
+                            <i className="icon-visa"></i>
+                        ) : bankCard === 'master' ? (
+                            <i className="icon-master"></i>
+                        ) : (
+                            <i className="icon-master"></i>
+                        )}
+                        <strong>{bankName}</strong>
+                    </h5>
+                    <p><strong>4345 **** **** 5050</strong></p>
+                </>
             ) : (
                 <>
                     <h5>
@@ -35,7 +49,7 @@ const AddressItem = ({ branch, selected,...rest }) => {
             )}
             <div className="address_item_choosel_del">
                 <CustomRadio
-                    labelName={ branch }
+                    labelName={branch}
                     radioTitle="Default"
                     checked={selected}
                 />

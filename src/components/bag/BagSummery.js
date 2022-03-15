@@ -1,9 +1,13 @@
 import React from 'react';
 
-const BagSummery = ({ showButton }) => {
+const BagSummery = ({ showButton, editBag }) => {
     return (
         <div className='bag_summery'>
-            <h4>Summery</h4>
+            <h4>Summery 
+                {editBag && 
+                    <span>Edit Bag</span>
+                }
+            </h4>
             <div className='bag_summery_item'>
                 <span>Items(3 item)</span>
                 <span className='gab_summery_price'>3600 ֏</span>

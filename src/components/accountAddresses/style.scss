@@ -1,7 +1,7 @@
 .account_adresses {
     max-width: 808px;
     width: 100%;
-    margin: 0 auto;
+    margin-left: auto;
 
     h3 {
         margin-bottom: 40px;
@@ -14,7 +14,7 @@
 
 .account_adresses_items_wrap {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 24px;
 }
 
@@ -31,4 +31,66 @@
     & + .account_adresses_inner {
         margin-top: 40px;
     }
+}
+
+.mobile_tabs {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-bottom: 24px;
+
+    span {
+        width: 50%;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        cursor: pointer;
+
+        &:after {
+            content: "";
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 4px;
+            margin-top: 16px;
+        }
+    }
+
+    .active {
+        font-weight: 700;
+        color: var(--blue);
+
+        &:after {
+            background-color: var(--blue);
+            z-index: 2;
+        }
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 2px;
+        left: 1;
+        width: 100%;
+        height: 1px;
+        background-color: var(--blue-gray);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .account_adresses {
+
+        h3 {
+            display: none;
+        }
+    }
+
+    .account_adresses_inner {
+        
+        h4 {
+            display: none;
+        } 
+    }
+
 }
