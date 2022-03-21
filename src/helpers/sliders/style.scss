@@ -47,7 +47,8 @@
                 .slick-slide {
                     > div {
                         overflow: hidden;
-                        width: 184px;
+                        // width: 184px;
+                        padding: 0 12px;
                         border-radius: 11px;
                         a {
                             text-decoration: none;
@@ -57,10 +58,13 @@
                             display: flex !important;
                             justify-content: end;
                             align-items: flex-end;
-                            width: 184px;
+                            width: 100%;
                             height: 184px;
                             position: relative;
                             background-color: #f0f3f5;
+                            border-radius: 11px;
+                            overflow: hidden;
+
                             > p {
                                 position: absolute;
                                 top: 16px;
@@ -119,6 +123,7 @@
                             }
                             > div {
                                 button {
+                                    height: 32px;
                                     padding: 3px 16px;
                                     border-radius: 10px;
                                     border: none;
@@ -161,11 +166,13 @@
                 top: 49%;
             }
             .slick-list {
+                margin: 0 -12px;
                 padding: 8px 0;
                 .slick-track {
                     .slick-slide {
                         > div {
-                            width: 198px;
+                            // width: 198px;
+                            margin: 0 4px;
                             padding: 8px;
                             transition: 0.3s;
                             &:hover{
@@ -175,6 +182,13 @@
                     }
                 }
             }
+        }
+    }
+
+    &.slider-1 {
+
+        .slick-list {
+            margin: 0 -12px;
         }
     }
 
@@ -228,6 +242,7 @@
                                     }
                                     > div {
                                         button {
+                                            height: 32px;
                                             padding: 3px 16px;
                                             border-radius: 10px;
                                             border: none;

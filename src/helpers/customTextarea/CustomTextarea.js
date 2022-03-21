@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 import './style.scss';
 
-const CustomInput = ({ inputTitle }) => {
+const CustomTextarea = ({ textareaTitle }) => {
     const [inputValue, setInputValue] = useState('');
 
     return (
         <div
-            className={`custom_input ${inputValue ? "active" : ""}`}
+            className={`custom_textarea ${inputValue ? "active" : ""}`}
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
         >
-            <input type="text" />
-            <span>{ inputTitle }</span>
+            <textarea></textarea>
+            <span>{ textareaTitle }</span>
         </div>
     );
 };
 
-export default CustomInput;
+export default CustomTextarea;

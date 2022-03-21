@@ -13,6 +13,7 @@ import AccountOrders from './components/accountOrders/AccountOrders';
 import AccountAddresses from "./components/accountAddresses/AccountAddresses";
 import PaymentsMethods from "./components/paymentsMethods/PaymentsMethods";
 import Shipping from "./pages/Shipping";
+import AboutUs from "./pages/AboutUs/AboutUs";
 
 export default function Routing() {
 
@@ -27,6 +28,7 @@ export default function Routing() {
                 <Route path="/bag" element={<Bag />} />
                 <Route path="/shipping-method" element={<Shipping />} />
                 <Route path="/favorites" element={<Favorites />} />
+                <Route path="/about-us" element={<AboutUs />} />
                 <Route path="/order-confirmation" element={<OrderConfirmation />} />
                 <Route path="/my-account/*" element={<MyAccount />}>
                     <Route path="account-details" element={<AccountDetails />} />

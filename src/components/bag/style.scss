@@ -173,6 +173,7 @@
     }
 
     .bag_summery {
+        width: 40%;
         padding: 16px;
     }
 
@@ -194,6 +195,12 @@
 }
 
 @media screen and (max-width: 768px) {
+    
+    .bag_summery {
+        max-width: 100%;
+        width: 100%;
+    }
+
     .bag_item {
         padding: 15px 0 24px;
     }

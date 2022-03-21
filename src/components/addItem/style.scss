@@ -16,6 +16,12 @@
         color: var(--gray);
     }
 
+    .additem_icon {
+        margin-bottom: 8px;
+        font-size: 48px;
+        color: var(--gray);
+    }
+
     &:hover {
         color: var(--white);
         background-color: var(--green);
@@ -23,5 +29,22 @@
         i:before {
             color: var(--white);
         }
+
+        .additem_icon {
+            color: inherit;
+        }
+
+        .custom_radio_title {
+            color: inherit;
+        }
+
+        .custom_radio_checkmark {
+            border-color: var(--white);
+
+            &:before {
+                background-color: var(--white);
+            }
+        }
     }
 }
+

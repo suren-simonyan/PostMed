@@ -1,0 +1,40 @@
+.custom_textarea {
+    position: relative;
+    height: 95px;
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+
+    span {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        padding: 0 5px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: var(--gray);
+        background-color: var(--white);
+        transition: transform 240ms, font-size 240ms, line-height 240ms, color 240ms;
+    }
+
+    textarea {
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        border: 0;
+        resize: none;
+    }
+
+    &:focus-within,
+    &.active {
+        border: 2px solid var(--green);
+
+        span {
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: .4px;
+            color: var(--green);
+            transform: translateY(-25px);
+        }
+    }
+}

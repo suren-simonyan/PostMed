@@ -11,6 +11,11 @@
         font-weight: 700;
         color: var(--blue);
     }
+
+    .bag_summery {
+        position: sticky;
+        top: 20px;
+    }
 }
 
 .shipping_method_inner {
@@ -90,4 +95,302 @@
 
 .shipping_region {
     width: 50%;
+    margin-bottom: 40px;
+}
+
+.shipping_hayposy_branch {
+    margin-bottom: 57px;
+}
+
+.shipping_contact_info {
+    margin-bottom: 57px;
+
+    h3 {
+        margin-bottom: 40px;
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+
+    h4 {
+        margin-bottom: 40px;
+        line-height: 24px;
+        
+        strong {
+            font-size: 22px;
+        }
+
+        span {
+            font-size: 16px;
+        }
+    }
+}
+
+.shipping_inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 24px;
+    margin-bottom: 57px;
+
+    .custom_input {
+        width: calc(50% - 12px);
+    }
+}
+
+.shipping_payments_methods {
+    // margin-bottom: 72px;
+
+    h3 {
+        margin-bottom: 40px;
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 700;
+        color: var(--blue);
+    }
+}
+
+.shipping_payments_type_wrap {
+    display: flex;
+    justify-content: space-between;
+
+    .custom_radio_title {
+        font-size: 16px;
+
+        .icon-Card {
+            font-size: 24px;
+        }
+
+        .icon-Cash {
+            font-size: 16px;
+        }
+    }
+
+    .shipping_payments_type {
+        width: calc(50% - 12px);
+        padding: 24px;
+        background-color: var(--blue-gray);
+        border-radius: 10px;
+        cursor: pointer;
+
+        &.payment_active {
+            background-color: var(--green);
+
+            .custom_radio_title {
+                color: var(--white);
+            }
+
+            .custom_radio_checkmark {
+                border-color: var(--white);
+
+                &:before {
+                    background-color:  var(--white);
+                }
+            }
+        }
+    }
+}
+
+.shipping_agree_terms {
+
+    .main_btn {
+        margin-top: 40px;
+        max-width: 392px;
+        width: calc(50% - 12px);
+    }
+
+    .checkbox + .checkbox {
+        margin-top: 16px;
+    }
+}
+
+.shipping_delivery {
+    margin-bottom: 57px;
+
+    h3 {
+        margin-bottom: 40px;
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+}
+
+.shipping_delivery_address {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 24px;
+    margin-bottom: 40px;
+
+    .custom_select {
+        width: calc(50% - 12px);
+    }
+}
+
+.shipping_delivery_building {
+    width: calc(50% - 12px);
+    margin-bottom: 57px;
+}
+
+.shipping_apartment_house {
+    display: flex;
+    margin-bottom: 24px;
+
+    .custom_radio_title {
+        font-size: 16px;
+    }
+
+    .custom_radio + .custom_radio {
+        margin-left: 40px;
+    }
+}
+
+.shipping_apartment_house_input {
+    display: flex;
+    column-gap: 24px;
+
+    .custom_input {
+        width: calc(50% - 12px);
+    }
+}
+
+.shipping_saved_branches,
+.shipping_saved_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-gap: 24px;
+    gap: 24px;
+    margin-bottom: 57px;
+}
+
+.shipping_saved_cards {
+    margin-top: 40px;
+    
+    .custom_radio_title {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .custom_radio_checkmark {
+        border-color: var(--gray);
+
+        &:before {
+            background-color: var(--gray);
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    
+    .shipping_delivery_type_wrap {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .shipping_delivery_type {
+        width: 100%;
+
+        & + .shipping_delivery_type {
+            margin-top: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .shipping_method {
+
+        h1 {
+            margin-bottom: 32px;
+            font-size: 22px;
+            line-height: 32px;
+        }
+
+        .bag_summery {
+            position: relative;
+        }
+        
+    }
+
+    .shipping_method_inner {
+        flex-direction: column;
+    }
+    
+    .shipping_method_left {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .shipping_choose_branch {
+
+        h3 {
+            margin-bottom: 32px;
+            font-size: 18px;
+        }
+    }
+
+    .shipping_region {
+        width: 100%;
+    }
+
+    .shipping_contact_info {
+
+        h3 {
+            margin-bottom: 32px;
+            font-size: 18px;
+        }
+
+        h4 {
+            margin-bottom: 32px;
+            font-size: 18px;
+        }
+    }
+
+    .shipping_inputs {
+        gap: 40px 0;
+
+        .custom_input {
+            width: 100%;
+        }
+    }
+
+    .shipping_payments_methods {
+
+        h3 {
+            margin-bottom: 32px;
+            font-size: 22px;
+        }
+    }
+
+    .shipping_payments_type_wrap {
+        flex-direction: column;
+        
+        .shipping_payments_type {
+            width: 100%;
+
+            & + .shipping_payments_type {
+                margin-top: 16px;
+            }
+        }
+    }
+
+    .shipping_agree_terms {
+        margin-bottom: 32px;
+
+        .main_btn {
+            display: none;
+        }
+    }
+    
+    .shipping_delivery_address {
+        flex-direction: column;
+        gap: 40px 0;
+
+        .custom_select {
+            width: 100%;
+        }
+    }
+
+    .shipping_delivery_building {
+        width: 100%;
+    }
+
 }
