@@ -24,13 +24,13 @@ export default function SliderTwo({ props }) {
             {
                 breakpoint: 1350,
                 settings: {
-                    slidesToShow: 5,
+                    slidesToShow: 6,
                 }
             },
             {
                 breakpoint: 1100,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 5,
                 }
             },
             {
@@ -43,21 +43,21 @@ export default function SliderTwo({ props }) {
             {
                 breakpoint: 769,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 2.4,
                     arrows: false
                 }
             },
-            {
-                breakpoint: 580,
-                settings: {
-                    slidesToShow: 3,
-                    arrows: false
-                }
-            },
+            // {
+            //     breakpoint: 580,
+            //     settings: {
+            //         slidesToShow: 3,
+            //         arrows: false
+            //     }
+            // },
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 2.3,
+                    slidesToShow: 2.4,
                     arrows: false
                 }
             }

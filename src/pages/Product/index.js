@@ -50,16 +50,16 @@ export default function Products() {
     return (
         <main className="products-page">
             <ShippingBanner />
-            <NavigationBanner
+            {/* <NavigationBanner
                 nav={nav}
-            />
+            /> */}
             <section className="products-page-section">
                 <div className="products-into">
                     <h2>Flu Medicine</h2>
                     <span>42 products</span>
                 </div>
                 <div className="products">
-                    <div>
+                    <div className="filter-for-fix-wrap">
                         <div className="filter-for-fix">
                             <div className="products-filters">
                                 <div className="product-sorting">
@@ -127,19 +127,19 @@ export default function Products() {
 
                                 ))}
 
+                                <nav
+                                    ref={filterButtonsRef}
+                                    className="filter-buttons">
+                                    <button className="cancel-button">
+                                        Cancel
+                                    </button>
+                                    <button className="apply-button">
+                                        Apply
+                                    </button>
+                                </nav>
+
                             </div>
                         </div>
-
-                        <nav
-                            ref={filterButtonsRef}
-                            className="filter-buttons">
-                            <button className="cancel-button">
-                                Cancel
-                            </button>
-                            <button className="apply-button">
-                                Apply
-                            </button>
-                        </nav>
                     </div>
 
                     <div className="products-list">

@@ -38,7 +38,7 @@ export default function HeaderUserInfo() {
             </Link>
             {
                 signIn ? <div className="header-profile">
-                    <Button
+                    <button className="header_nav_icon"
                         ref={anchorRef}
                         id="composition-button"
                         aria-controls={open ? 'composition-menu' : undefined}
@@ -48,7 +48,7 @@ export default function HeaderUserInfo() {
                         style={{ width: "40px" }}
                     >
                         <ProfileSvgIcon />
-                    </Button>
+                    </button>
                     <Popper
                         open={open}
                         anchorEl={anchorRef.current}
@@ -97,23 +97,29 @@ export default function HeaderUserInfo() {
                         )}
                     </Popper>
                 </div> : <div className="header-sign-in">
-                    <Button
+                    <button
+                        className="header_nav_icon"
                         onClick={() => {
                             setLoginRegister("login")
                             setSignInPopUp(true)
                         }}
                     >
-                        <SignInSvgIcon />
-                    </Button>
+                        <i class="icon-Entry">
+                            <span class="path1"></span>
+                            <span class="path2"></span>
+                            <span class="path3"></span>
+                        </i>
+                    </button>
                 </div>
             }
             <div className="header-bag">
                 <Link to="/bag">
-                <Button
-                    style={{ width: "40px" }}
-                >
-                    <BagSvgIcon />
-                </Button>
+                    <button className="header_nav_icon">
+                        <i class="icon-Bag">
+                            <span class="path1"></span>
+                            <span class="path2"></span>
+                        </i>
+                    </button>
                 </Link>
             </div>
             <Dialog

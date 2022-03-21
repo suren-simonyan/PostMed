@@ -9,7 +9,7 @@
             font-weight: bold;
             font-size: 32px;
             line-height: 40px;
-            color: #281e78;
+            color: var(--blue);
             margin-bottom: 0;
         }
         > p {
@@ -61,7 +61,7 @@
                             width: 100%;
                             height: 184px;
                             position: relative;
-                            background-color: #f0f3f5;
+                            background-color: var(--blue-gray);
                             border-radius: 11px;
                             overflow: hidden;
 
@@ -87,7 +87,7 @@
                             width: 100%;
                             height: 100%;
                             padding: 16px;
-                            background-color: #f0f3f5;
+                            background-color: var(--blue-gray);
                             border-radius: 10px;
                             .slick-slide-2-img-area {
                                 display: flex;
@@ -113,7 +113,7 @@
                                     font-weight: bold;
                                     font-size: 20px;
                                     line-height: 24px;
-                                    color: #281e78;
+                                    color: var(--blue);
                                 }
                                 .sale-price {
                                     text-decoration-line: line-through;
@@ -129,26 +129,30 @@
                                     border: none;
                                 }
                                 .item-btn {
-                                    background-color: #12d8a8;
-                                    color: #ffffff;
+                                    background-color: var(--green);
+                                    color: var(--white);
                                     margin-right: 8px;
                                 }
                                 .pack-btn {
-                                    background-color: #f0f3f5;
-                                    color: #8b8b8b;
+                                    background-color: var(--blue-gray);
+                                    color: var(--gray);
                                 }
                             }
                             > button {
                                 width: 100%;
                                 margin-top: 16px;
-                                padding: 12px;
-                                border: 1px solid #281e78;
+                                height: 48px;
+                                padding: 0 12px;
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-weight: 700;
+                                background-color: var(--white);
+                                color: var(--blue);
+                                border: 1px solid var(--blue);
                                 border-radius: 10px;
-                                background-color: #ffffff;
-                                color: #281e78;
                                 &:hover {
-                                    background-color: #281e78;
-                                    color: #ffffff;
+                                    background-color: var(--blue);
+                                    color: var(--white);
                                 }
                             }
                         }
@@ -158,7 +162,7 @@
         }
     }
     &.slider-2 {
-        .title{
+        .title {
             margin-bottom: 22px;
         }
         .slick-slider {
@@ -175,7 +179,7 @@
                             margin: 0 4px;
                             padding: 8px;
                             transition: 0.3s;
-                            &:hover{
+                            &:hover {
                                 box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.144);
                             }
                         }
@@ -186,7 +190,6 @@
     }
 
     &.slider-1 {
-
         .slick-list {
             margin: 0 -12px;
         }
@@ -195,7 +198,7 @@
     @media (max-width: 1024px) {
         padding-top: 72px;
         .title {
-            padding-right: 4.26%;
+            padding-right: 0;
         }
         @media (max-width: 768px) {
             .slick-slider {
@@ -204,9 +207,9 @@
                         .slick-slide {
                             > div {
                                 overflow: hidden;
-                                width: 136px;
+                                // width: 136px;
                                 .slide-item-1 {
-                                    width: 136px;
+                                    // width: 136px;
                                     height: 136px;
                                     .slick-slide-1-img-area {
                                         max-width: 110px;
@@ -217,7 +220,7 @@
                                     }
                                 }
                                 .slide-item-2 {
-                                    width: 136px;
+                                    // width: 136px;
                                     .slick-slide-2-img-area {
                                         max-width: 110px;
                                         max-height: 110px;
@@ -243,18 +246,18 @@
                                     > div {
                                         button {
                                             height: 32px;
-                                            padding: 3px 16px;
+                                            padding: 0 15px;
                                             border-radius: 10px;
                                             border: none;
                                         }
                                         .item-btn {
-                                            background-color: #12d8a8;
-                                            color: #ffffff;
+                                            background-color: var(--green);
+                                            color: var(--white);
                                             margin-right: 8px;
                                         }
                                         .pack-btn {
-                                            background-color: #f0f3f5;
-                                            color: #8b8b8b;
+                                            background-color: var(--blue-gray);
+                                            color: var(--gray);
                                         }
                                     }
                                     > button {
@@ -269,5 +272,36 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .slider .slick-slider button.slick-arrow.slick-next {
+        right: 30px;
+    }
+
+    .slider .slick-slider button.slick-arrow.slick-prev {
+        left: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .slider .title h2 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .slider .slick-slider .slick-list .slick-track .slick-slide > div {
+        padding: 0 8px;
+    }
+
+    .slider.slider-2 .slick-slider .slick-list {
+        margin: 0 -20px 0 -12px;
+    }
+
+    .slider.slider-2 .slick-slider .slick-list .slick-track .slick-slide > div {
+        margin: 0 4px;
+        padding: 4px;
     }
 }

@@ -1,6 +1,6 @@
 .breadcrumbs_wrap {
     height: 48px;
-    margin: 16px auto 24px;
+    margin: 0 auto 24px;
     background-color: var(--blue-gray);
 }
 
@@ -32,3 +32,19 @@
         }
     }
 }
+
+@media screen and (max-width: 992px) {
+
+    .breadcrumbs_wrap {
+        margin: 0 auto 16px;
+    }
+    
+    .breadcrumbs {
+
+        a {
+            font-size: 14px;
+        }
+    }
+
+}
+

@@ -49,7 +49,6 @@ main.home-page {
 
     @media (max-width: 1024px) {
         .home-page-section {
-            padding: 0 0 104px 4.26%;
             .home-page-box-container {
                 .title {
                     margin-top: 72px;
@@ -57,11 +56,10 @@ main.home-page {
                 }
                 .home-page-box {
                     justify-content: unset;
-                    flex-direction: column;
+                    align-items: center;
                     .box-left {
-                        order: 2;
                         width: 100%;
-                        padding-right: 16px;
+                        margin-right: 16px;
                         padding-top: 40px;
                         .item{
                             justify-content: unset;
@@ -77,22 +75,7 @@ main.home-page {
             }
         }
     }
-    @media (max-width: 767px) {
-        .home-page-section {
-            .home-page-box-container {
-                .title {
-                    font-size: 28px;
-                }
-                .home-page-box {
-                    overflow: hidden;
-                    .box-img-area {
-                        width: 125%;
-                    }
-                }
-            }
-        }
-    }
-    @media (max-width: 480px) {
+    @media (max-width: 992px) {
         .home-page-section {
             .home-page-box-container {
                 .title {
@@ -111,6 +94,7 @@ main.home-page {
                                 line-height: 32px;
                             }
                             .text{
+                                margin-bottom: 0;
                                 font-size: 14px;
                             }
                             &:last-of-type{
@@ -122,4 +106,23 @@ main.home-page {
             }
         }
     }
+    @media (max-width: 767px) {
+        .home-page-section {
+            .home-page-box-container {
+                
+                .home-page-box {
+                    flex-direction: column;
+                    .box-img-area {
+                        order: -1;
+                        width: calc(100% + 40px);
+                        padding-left: 20px;
+                    }
+                    .box-left{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    
 }

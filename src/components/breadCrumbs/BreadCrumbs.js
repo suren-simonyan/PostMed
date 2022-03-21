@@ -4,10 +4,7 @@ import useBreadcrumbs  from 'use-react-router-breadcrumbs';
 import './style.scss';
 
 const BreadCrumbs = () => {
-
     const breadcrumbs = useBreadcrumbs();
-
-    console.log(breadcrumbs);
 
     return (
         <div className='breadcrumbs_wrap'>

@@ -19,9 +19,9 @@ export default function ProductDetails() {
 
     return (
         <main className="product-details">
-            <NavigationBanner
+            {/* <NavigationBanner
                 nav={["Home", "Cough", "Cold", "this page"]}
-            />
+            /> */}
             <section className="product-info-section">
                 <a className="mobile_back" href="#">Flu Medicine</a>
                 <section className="product_top_info">

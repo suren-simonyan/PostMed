@@ -30,9 +30,11 @@ nav.navigation-banner{
 }
 
 nav.shipping-banner{
-    padding: 0 2.77778% 16px;
+    padding: 0 20px 16px;
     .shipping-banner-inner{
+        max-width: 1360px;
         width: 100%;
+        margin: 0 auto;
         background-color: rgba(18, 216, 168, 0.3);
         padding: 4px;
         text-align: center;
@@ -41,9 +43,6 @@ nav.shipping-banner{
             margin: 0;
             color: #281E78;
         }
-    }
-    @media screen and (max-width: 1024px) {
-        padding: 0 4.26666% 16px;
     }
     @media screen and (max-width: 767px) {
         display: none;
