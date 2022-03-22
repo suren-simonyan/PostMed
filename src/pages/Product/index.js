@@ -14,33 +14,38 @@ import ShippingBanner from "../../helpers/navigationBanner/ShippingBanner";
 import { useEffect, useRef, useState } from "react";
 import { MusicOffOutlined } from "@mui/icons-material";
 import ProductItem from "../../components/product/ProductItem";
+import useBodyScrollHidden from "../../hooks/useBodyScrollHidden";
 
 
 const nav = ["Home", "page-2", "page-3", "this page"]
+
 export default function Products() {
-    const filterButtonsRef = useRef(null)
-    const [state, setstate] = useState(0)
+    const filterButtonsRef = useRef(null);
+    const [state, setstate] = useState(0);
+    const [filterOpen, setFilterOpen] = useState(false);
 
-    window.onscroll = function () {
-        const filter = document.querySelector(".filter-for-fix");
+    // window.onscroll = function () {
+    //     const filter = document.querySelector(".filter-for-fix");
 
-        if (window.pageYOffset > 305) {
-            filter.classList.add('fixed-filter');
+    //     // if (window.pageYOffset > 305) {
+    //     //     filter.classList.add('fixed-filter');
 
-            if ((document.body.offsetHeight - (window.pageYOffset + window.innerHeight)) <= document.querySelector("footer").offsetHeight) {
-                filter.classList.remove('fixed-filter');
-                filter.classList.add('last-filter');
-                filterButtonsRef.current.classList.add("fiter-buttonst-fix")
-            } else {
-                filter.classList.remove('last-filter');
-                filterButtonsRef.current.classList.remove("fiter-buttonst-fix")
+    //     //     if ((document.body.offsetHeight - (window.pageYOffset + window.innerHeight)) <= document.querySelector("footer").offsetHeight) {
+    //     //         filter.classList.remove('fixed-filter');
+    //     //         filter.classList.add('last-filter');
+    //     //         filterButtonsRef.current.classList.add("fiter-buttonst-fix")
+    //     //     } else {
+    //     //         filter.classList.remove('last-filter');
+    //     //         filterButtonsRef.current.classList.remove("fiter-buttonst-fix")
 
-            }
-        }
-        else {
-            filter.classList.remove('fixed-filter');
-        }
-    }
+    //     //     }
+    //     // }
+    //     // else {
+    //     //     filter.classList.remove('fixed-filter');
+    //     // }
+    // }
+
+    useBodyScrollHidden(filterOpen);
 
 
     const sorts = [1, 1, 1, 1, 1]
@@ -59,8 +64,18 @@ export default function Products() {
                     <span>42 products</span>
                 </div>
                 <div className="products">
-                    <div className="filter-for-fix-wrap">
+                    <div className={`filter-for-fix-wrap ${filterOpen ? "opened" : ""}`}>
                         <div className="filter-for-fix">
+                            <div className="mobile_nav_filter">
+                                <span>Filters</span>
+                                <i
+                                    className="icon-Close"
+                                    onClick={() => setFilterOpen(false)}
+                                >
+                                    <span className="path1"></span>
+                                    <span className="path2"></span>
+                                </i>
+                            </div>
                             <div className="products-filters">
                                 <div className="product-sorting">
                                     <h2>Cough, Cold & Flue</h2>
@@ -148,9 +163,12 @@ export default function Products() {
                                 <p>High to Low</p>
                                 <ExpandMoreIcon />
                             </div>
-                            <button>
+                            <span
+                                className="mobile_filter"
+                                onClick={() => setFilterOpen(true)}
+                            >
                                 <MobileFiltersButtonSvgIcon />
-                            </button>
+                            </span>
                         </div>
                         <div className="products-container">
                             {

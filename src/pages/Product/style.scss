@@ -28,76 +28,13 @@ main.products-page {
         width: 100%;
         margin: 0 auto;
         padding: 0 20px 108px;
-        .products {
-            display: flex;
-            justify-content: space-between;
-            padding-top: 24px;
-
-            .products-list {
-                width: 78.5%;
-                padding-left: 3.9%;
-                .sort-by {
-                    font-weight: bold;
-                    margin-bottom: 16px;
-                    display: flex;
-                    justify-content: end;
-                    grid-column-gap: 11px;
-                    > div {
-                        display: flex;
-                        p {
-                            color: var(--blue);
-                        }
-                        svg {
-                            fill: var(--blue);
-                        }
-                    }
-                    > button {
-                        display: none;
-                    }
-                }
-                .viewed-products {
-                    padding-top: 58px;
-                    text-align: center;
-                    width: 300px;
-                    .all-products {
-                        .viewed-products-procent {
-                            position: absolute;
-                            left: 0;
-                            top: 0;
-                            bottom: 0;
-                            width: 60%;
-                            background-color: var(--blue);
-                        }
-                        width: 100%;
-                        background-color: var(--blue-gray);
-                        height: 4px;
-                        position: relative;
-                    }
-                    .view-more-products {
-                        border: 1px solid var(--blue);
-                        color: var(--blue);
-                        background-color: var(--white);
-                        border-radius: 10px;
-                        margin-top: 16px;
-                        font-weight: bold;
-                        transition: 0.25s;
-                        width: 100%;
-                        padding: 12px;
-                        &:hover {
-                            background-color: var(--blue);
-                            color: var(--white);
-                        }
-                    }
-                }
-            }
-        }
     }
 
     .filter-for-fix-wrap {
         position: relative;
         width: 21.5%;
         > div {
-            width: 100%;
+             width: 100%;
             .products-filters {
                 width: 100%;
                 overflow-y: scroll;
@@ -193,20 +130,6 @@ main.products-page {
                     }
                 }
             }
-            &.fixed-filter {
-                // position: fixed;
-                // left: 0;
-                // width: 210px;
-                // margin-left: 3.5%;
-                // padding-left: 20px;
-                // .products-filters {
-                //     width: 19.75%;
-                // }
-            }
-            &.last-filter {
-                // position: absolute;
-                // bottom: -108px;
-            }
 
             &.filter-for-fix {
                 position: sticky;
@@ -242,11 +165,25 @@ main.products-page {
                 width: 108px;
             }
         }
-        // .fiter-buttonst-fix {
-        //     position: absolute;
-        //     bottom: 0;
-        //     left: 0;
-        // }
+    }
+
+    .mobile_nav_filter {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32px;
+
+        span {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 700;
+            color: var(--blue);
+        }
+
+        i {
+            font-size: 24px;
+            cursor: pointer;
+        }
     }
 
     // MIN !!!
@@ -294,11 +231,10 @@ main.products-page {
                 }
             }
         }
-        
+
         .filter-for-fix-wrap {
             max-width: 265px;
-            width: calc(30% - 16px);
-            margin-right: 16px;
+            width: 30%;
         }
 
         .products-container {
@@ -307,10 +243,89 @@ main.products-page {
         }
     }
 
-    @media screen and (max-width: 767px) {
+    .products {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 24px;
+    }
+
+    .products-list {
+        width: 78.5%;
+        padding-left: 3.9%;
+        .sort-by {
+            font-weight: bold;
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: end;
+            grid-column-gap: 11px;
+            > div {
+                display: flex;
+                p {
+                    color: var(--blue);
+                }
+                svg {
+                    fill: var(--blue);
+                }
+            }
+        }
+        .viewed-products {
+            padding-top: 58px;
+            text-align: center;
+            width: 300px;
+            .all-products {
+                .viewed-products-procent {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    width: 60%;
+                    background-color: var(--blue);
+                }
+                width: 100%;
+                background-color: var(--blue-gray);
+                height: 4px;
+                position: relative;
+            }
+            .view-more-products {
+                border: 1px solid var(--blue);
+                color: var(--blue);
+                background-color: var(--white);
+                border-radius: 10px;
+                margin-top: 16px;
+                font-weight: bold;
+                transition: 0.25s;
+                width: 100%;
+                padding: 12px;
+                &:hover {
+                    background-color: var(--blue);
+                    color: var(--white);
+                }
+            }
+        }
+    }
+
+    .mobile_filter {
+        display: none;
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+        .mobile_filter {
+            display: block;
+        }
+
+        .mobile_nav_filter {
+            display: flex;
+        }
 
         .products-list {
             width: 100%;
+            padding-left: 0;
+
+            .sort-by {
+                justify-content: flex-start;
+            }
         }
 
         .products-into {
@@ -323,23 +338,51 @@ main.products-page {
                 font-size: 16px;
             }
         }
-        section.products-page-section {
-            // padding: 16px 4.27% 104px;
-            .products {
-                .products-list {
-                    .products-container {
-                    }
-                }
-            }
-        }
         section.products-page-section .products {
             padding-top: 16px;
         }
 
-        
         .filter-for-fix-wrap {
-            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            max-width: 100%;
+            width: 100%;
+            height: 100vh;
+            transform: translateX(-100%);
+            z-index: 99;
+
+            &:before {
+                content: "";
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(#000, .25);
+            }
+
+            .filter-for-fix {
+                width: 70%;
+                padding: 16px 16px 0 16px;
+                background-color: var(--white);
+            }
+
+            .filter-buttons {
+                justify-content: center;
+            }
+
+            .products-filters {
+                max-height: calc(100vh - 80px) !important;
+            }
+
+            &.opened {
+                transform: translateX(0);
+                transition: transform 240ms;
+            }
         }
+
+        
     }
 
     @media screen and (max-width: 580px) {
@@ -359,8 +402,15 @@ main.products-page {
     }
 
     @media screen and (max-width: 480px) {
+
         .products-container {
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         }
+        
+        .filter-for-fix-wrap .filter-for-fix {
+            width: 100%;
+        }
+
     }
+
 }

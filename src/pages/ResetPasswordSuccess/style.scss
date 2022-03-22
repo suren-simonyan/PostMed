@@ -1,0 +1,29 @@
+.modal_inner {
+
+    h5 {
+
+        .icon-checked-alt {
+            margin-right: 16px;
+            font-size: 36px;
+        }
+    }
+
+    .modal_reset {
+        width: 100%;
+    }
+
+    .back_to {
+        display: block;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 700;
+        color: var(--blue);
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .modal_signin {
+        width: 100%;
+    }
+}
+

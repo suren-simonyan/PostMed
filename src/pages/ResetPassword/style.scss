@@ -1,0 +1,29 @@
+.modal_inner {
+
+    h5 {
+
+        i {
+            margin-right: 16px;
+            font-size: 28px;
+        }
+    }
+
+    .modal_reset {
+        width: 100%;
+    }
+
+    .back_to {
+        display: block;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 700;
+        color: var(--blue);
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .custom_input + .custom_input {
+        margin: 40px 0 48px;
+    }
+}
+

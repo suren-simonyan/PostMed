@@ -104,10 +104,10 @@ export default function HeaderUserInfo() {
                             setSignInPopUp(true)
                         }}
                     >
-                        <i class="icon-Entry">
-                            <span class="path1"></span>
-                            <span class="path2"></span>
-                            <span class="path3"></span>
+                        <i className="icon-Entry">
+                            <span className="path1"></span>
+                            <span className="path2"></span>
+                            <span className="path3"></span>
                         </i>
                     </button>
                 </div>
@@ -115,9 +115,9 @@ export default function HeaderUserInfo() {
             <div className="header-bag">
                 <Link to="/bag">
                     <button className="header_nav_icon">
-                        <i class="icon-Bag">
-                            <span class="path1"></span>
-                            <span class="path2"></span>
+                        <i className="icon-Bag">
+                            <span className="path1"></span>
+                            <span className="path2"></span>
                         </i>
                     </button>
                 </Link>

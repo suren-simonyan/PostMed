@@ -4,7 +4,7 @@
     border: 1px solid var(--gray);
     border-radius: 4px;
 
-    span {
+    span:not(.hide_show_pass) {
         position: absolute;
         top: 15px;
         left: 15px;
@@ -18,17 +18,37 @@
     }
 
     input {
+        position: relative;
         width: 100%;
         height: 100%;
         padding: 15px;
+        background-color: transparent;
         border: 0;
+        z-index: 3;
+    }
+
+    .hide_show_pass {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        width: 24px;
+        height: 24px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    &.custom_password {
+        
+        input {
+            width: calc(100% - 44px);
+        }
     }
 
     &:focus-within,
     &.active {
         border: 2px solid var(--green);
 
-        span {
+        span:not(.hide_show_pass) {
             font-size: 12px;
             line-height: 16px;
             letter-spacing: .4px;

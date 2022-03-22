@@ -1,0 +1,17 @@
+.modal_inner {
+
+    .forgot_pass {
+        width: 100%;
+        margin: 50px auto 24px;
+    }
+
+    .back_to {
+        display: block;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 700;
+        color: var(--blue);
+        text-align: center;
+        cursor: pointer;
+    }
+}
