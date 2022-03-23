@@ -261,7 +261,7 @@ header {
     }
 }
 
-.css-zw3mfo-MuiModal-root-MuiDialog-root.header-menu-dialog {
+.header-menu-dialog {
     width: 85%;
     .MuiPaper-root {
         display: flex;
@@ -346,73 +346,8 @@ header {
     }
 }
 
-.header-menu {
-    .header-menu-close-icon {
-        position: absolute;
-        top: 24px;
-        right: 9.5%;
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        z-index: 999999;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    header {
-        nav {
-            flex-wrap: wrap;
-            padding: 16px 20px 16px;
-            .header-burger-logo {
-                order: 1;
-                .header-menu {
-                    .header-burger {
-                        svg {
-                            width: 40px;
-                            height: 40px;
-                        }
-                    }
-                }
-                .header-logo {
-                    height: 40px;
-                    svg {
-                        width: 132px;
-                    }
-                }
-            }
-            .header-search {
-                order: 3;
-                margin-top: 24px;
-                width: 100%;
-                .header-search-area {
-                    width: 100%;
-                    .search-icon {
-                        top: 11px;
-                        right: 13px;
-                        svg {
-                            &:first-of-type {
-                                display: none;
-                            }
-                            &:last-of-type {
-                                display: block;
-                                width: 26px;
-                                height: 26px;
-                            }
-                        }
-                    }
-                }
-            }
-            .header-actions {
-                order: 2;
-            }
-        }
-    }
-}
-
 @media screen and (max-width: 980px) {
-    header {
-        nav {
-            padding: 16px 15px;
-        }
+    nav {
+        padding: 16px 15px;
     }
 }

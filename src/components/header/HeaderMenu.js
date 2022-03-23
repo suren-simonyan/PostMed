@@ -8,6 +8,7 @@ import ArrowRight from "../../resourses/icons/ArrowRight";
 import img1 from "../../resourses/images/medicineImg1.png"
 import img2 from "../../resourses/images/medicineImg2.png"
 import { Link } from "react-router-dom";
+import './HeaderMenu.scss';
 
 
 const categoryesData = [

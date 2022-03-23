@@ -2,9 +2,14 @@ import React from 'react';
 import CustomRadio from '../../helpers/customRadio/CustomRadio';
 import './style.scss';
 
-const AddItem = ({ addItemTitle, cardIcon, hasCheckBox }) => {
+const AddItem = ({ addItemTitle, cardIcon, hasCheckBox,...rest}) => {
+
+
     return (
-        <article className='add_item'>
+        <article 
+            className='add_item'
+            {...rest}
+        >
             {cardIcon ? (
                 <i className={`additem_icon ${cardIcon}`}></i>
             ) : (

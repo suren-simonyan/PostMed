@@ -1,9 +1,11 @@
 import React from 'react';
+import PopupVerifyEmail from '../../components/popupVerifyEmail/PopupVerifyEmail';
 import './style.scss';
 
 const ResetPasswordSuccess = () => {
     return (
         <div className='modal_pages'>
+            <PopupVerifyEmail />
             <div className="modal_inner">
                 <h5 className='modal_title_center'>
                     <i className="icon-checked-alt"></i>

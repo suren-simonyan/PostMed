@@ -1,0 +1,76 @@
+.popup_add_home_address_wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, 0.4);
+    z-index: 109;
+
+    &.opened {
+        display: flex;
+    }
+}
+
+.popup_add_home_address {
+    position: relative;
+    max-width: 648px;
+    width: calc(100% - 40px);
+    margin: auto;
+    padding: 24px 48px 56px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+
+    .icon-Close {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    h5 {
+        margin-bottom: 57px;
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 700;
+        color: var(--blue);
+        text-align: center;
+    }
+
+    .custom_select {
+        margin-bottom: 40px;
+    }
+
+    .popup_appartament_house {
+        margin-bottom: 24px;
+        
+        .custom_radio + .custom_radio {
+            margin-left: 42px;
+        }
+
+        .custom_radio_title {
+            font-size: 16px;
+        }
+    }
+
+    .popup_bulding_appartament {
+        display: flex;
+        column-gap: 24px;
+        margin-bottom: 40px;
+
+        .custom_input {
+            width: calc(50% - 12px);
+        }
+    }
+
+    .btn_main {
+        display: block;
+        max-width: 366px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+

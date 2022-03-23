@@ -4,7 +4,6 @@ import CustomRadio from '../../helpers/customRadio/CustomRadio';
 
 const AddressItem = ({ branch, bankCard, bankName, selected, ...rest }) => {
 
-
     return (
         <article
             className={`address_item ${selected ? "address_selected" : ""}`}

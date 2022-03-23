@@ -13,11 +13,12 @@ footer {
             line-height: 24px;
             color: #281e78;
         }
-        > div {
-            width: 25%;
-        }
+        // > div {
+        //     width: 25%;
+        // }
         .footer-about-blog {
-            svg {
+            // width: 30%;
+            > svg {
                 width: 197px;
                 height: 48px;
                 margin-bottom: 24px;
@@ -123,7 +124,7 @@ footer {
         padding: 48px 4.26%;
         .footer {
             .footer-about-blog {
-                svg {
+                > svg {
                     width: 135px;
                     height: 32px;
                 }

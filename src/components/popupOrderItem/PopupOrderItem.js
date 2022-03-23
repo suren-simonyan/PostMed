@@ -1,30 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './style.scss';
-import productImg from '../../resourses/images/medicineImg1.png'
-import useWindowSize from '../../hooks/useWindowSize';
-import SliderTwo from '../../helpers/sliders/SliderTwo';
+import productImg from '../../resourses/images/medicineImg1.png';
 
-import img7 from "../../resourses/images/70ea37567c320595d458002507b84b3bff6a977e29eebb982c797ebee734eeab 1 (2).png";
-import img8 from "../../resourses/images/70ea37567c320595d458002507b84b3bff6a977e29eebb982c797ebee734eeab 1 (1).png";
-import img9 from "../../resourses/images/70ea37567c320595d458002507b84b3bff6a977e29eebb982c797ebee734eeab 1.png";
-
-export const arr3 = [img7, img8, img9, img8, img7, img9, img8, img9, img7,]
-
-
-const OrderConfirmation = () => {
-    const [showHide, setShowHide] = useState(false);
-    const size = useWindowSize();
+const PopupOrderItem = () => {
 
     return (
-        <section className='order_confirmation'>
-            <h1>
-                <i className="icon-checked-alt"></i>
-                Thank you for your order!
-            </h1>
-            <p>We sent an email to
-                <strong>ArmenSargsyan@president.am</strong>
-                <span>With Your order confirmation and recipent</span>
-            </p>
+        <div className='popup_order_item_wrap'>
 
             <div className="order_confirmation_info_wrap">
                 <div className="order_confirmation_info_top">
@@ -101,27 +82,24 @@ const OrderConfirmation = () => {
                             </div>
                         </div>
                     </div>
-                    {size.width < 768 &&
-                        <div className="mobile_deliver_status">
-                            <h5>Statuses</h5>
-                            <div className="mobile_deliver_status_sub">
-                                <time>11.10.2021</time>
-                                <i className="icon-checked-alt prev_status"></i>
-                                <span className='deliver_verified'>Verified</span>
-                            </div>
-                            <div className="mobile_deliver_status_sub">
-                                <time>12.10.2021</time>
-                                <i className="icon-checked-field">
-                                    <span className="path1"></span>
-                                    <span className="path2"></span>
-                                    <span className="path3"></span>
-                                </i>
-                                <span className='deliver_inprocess'>In Process</span>
-                            </div>
+
+                    <div className="mobile_deliver_status">
+                        <h5>Statuses</h5>
+                        <div className="mobile_deliver_status_sub">
+                            <time>11.10.2021</time>
+                            <i className="icon-checked-alt prev_status"></i>
+                            <span className='deliver_verified'>Verified</span>
                         </div>
-                    }
-
-
+                        <div className="mobile_deliver_status_sub">
+                            <time>12.10.2021</time>
+                            <i className="icon-checked-field">
+                                <span className="path1"></span>
+                                <span className="path2"></span>
+                                <span className="path3"></span>
+                            </i>
+                            <span className='deliver_inprocess'>In Process</span>
+                        </div>
+                    </div>
                 </div>
                 <span
                     className={`order_confirm_show_hide ${showHide ? "show" : "hide"}`}
@@ -134,11 +112,8 @@ const OrderConfirmation = () => {
                 </span>
             </div>
 
-            <SliderTwo props={arr3} />
-            <SliderTwo props={arr3} />
-
-        </section>
+        </div>
     );
 };
 
-export default OrderConfirmation;
+export default PopupOrderItem;

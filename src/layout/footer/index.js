@@ -17,8 +17,29 @@ export default function Footer() {
             <div className="footer">
                 <div className="footer-about-blog" >
                     <LogoPostmedSvg />
-                    <p className="footer-blog-title">About Us</p>
-                    <p className="footer-about-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+                    <div className="footer-contact-blog">
+                        <p className="footer-blog-title">Contact</p>
+                        <div className="footer-constacts">
+                            <div>
+                                <PhoneSvgIcon />
+                                <p>+374 33 33 33 33
+                                    <span></span>
+                                </p>
+                            </div>
+                            <div>
+                                <EmailSvgIcon />
+                                <p>Medinfo@haypost.am
+                                    <span></span>
+                                </p>
+                            </div>
+                            <div>
+                                <AddresSvgIcon />
+                                <p>RA, 0002, c․Yerevan, Saryan 22
+                                    <span></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="footer-blogs">
                     <div className="footer-blog" >
@@ -45,27 +66,6 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="footer-contact-blog">
-                    <p className="footer-blog-title">Contact</p>
-                    <div className="footer-constacts">
-                        <div>
-                            <PhoneSvgIcon />
-                            <p>+374 33 33 33 33
-                                <span></span>
-                            </p>
-                        </div>
-                        <div>
-                            <EmailSvgIcon />
-                            <p>Medinfo@haypost.am
-                                <span></span>
-                            </p>
-                        </div>
-                        <div>
-                            <AddresSvgIcon />
-                            <p>RA, 0002, c․Yerevan, Saryan 22
-                                <span></span>
-                            </p>
-                        </div>
-                    </div>
                     <p className="footer-blog-title">Follow Us</p>
                     <div className="footer-soc-icons">
                         <div>
@@ -82,6 +82,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
+
             </div>
             <div className="footer-extra">
                 <div>
