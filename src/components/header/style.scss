@@ -1,9 +1,21 @@
 .header_favorite {
     line-height: 0;
+    transition: color 2000ms;
     text-decoration: none;
 
     i {
         font-size: 26px;
+    }
+
+    span:before {
+        transition: color 200ms;
+    }
+
+    &:hover {
+
+        span:before {
+            color: var(--green);
+        }
     }
 }
 
@@ -13,6 +25,18 @@
     align-items: center;
     background-color: transparent;
     border: none;
+
+    span:before {
+        transition: color 200ms;
+    }
+
+    &:hover {
+
+        span:before {
+            color: var(--green);
+        }
+    }
+
 }
 
 .header_favorite,

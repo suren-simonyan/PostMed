@@ -80,6 +80,11 @@ img {
     background-color: var(--blue);
     border: 0;
     border-radius: 10px;
+    transition: background-color 200ms;
+
+    &:hover {
+        background-color: rgba(#281e78, .85);
+    }
 }
 
 .btn_transparent {

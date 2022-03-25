@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.scss';
 import productImg from '../../resourses/images/medicineImg1.png';
+import PopupOrderItem from '../popupOrderItem/PopupOrderItem';
 
 const OrderItem = () => {
+    const [openPopupOrder, setOpenPopupOrder] = useState(false);
+
     return (
         <div className='order_item'>
+
+            <PopupOrderItem openPopupOrder={openPopupOrder} setOpenPopupOrder={setOpenPopupOrder}  />
+
             <div className="order_item_info">
                 <div className="order_item_id_status">
                     <div className="order_item_id_status_left">
@@ -58,6 +64,9 @@ const OrderItem = () => {
                     </div>
                 </div>
                 <button className='main_btn'>Buy Again</button>
+                <button
+                    onClick={() => setOpenPopupOrder(true)}
+                >Open</button>
             </div>
         </div>
     );

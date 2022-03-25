@@ -1,0 +1,52 @@
+.popup_order_item_wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, 0.4);
+    z-index: 109;
+
+    &.opened {
+        display: flex;
+    }
+
+    .order_confirmation_info_wrap {
+        max-height: 808px;
+        height: 87%;
+        margin: auto;
+        background-color: var(--white);
+        overflow-y: auto;
+
+        .order_confirmation_info_top {
+            justify-content: flex-start;
+
+            time {
+                margin-left: 16px;
+            }
+        }
+    }
+}
+
+.order_confirmation_info_wrap {
+
+    .icon-Close {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        font-size: 24px;
+        cursor: pointer;
+
+        span:before {
+            transition: color 200ms;
+        }
+
+        &:hover {
+
+            span:before {
+                color: var(--green);
+            }
+        }
+    }
+}

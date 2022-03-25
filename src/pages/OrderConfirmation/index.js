@@ -8,7 +8,7 @@ import img7 from "../../resourses/images/70ea37567c320595d458002507b84b3bff6a977
 import img8 from "../../resourses/images/70ea37567c320595d458002507b84b3bff6a977e29eebb982c797ebee734eeab 1 (1).png";
 import img9 from "../../resourses/images/70ea37567c320595d458002507b84b3bff6a977e29eebb982c797ebee734eeab 1.png";
 
-export const arr3 = [img7, img8, img9, img8, img7, img9, img8, img9, img7,]
+export const arr3 = [img7, img8, img9, img8, img7, img9, img8, img9, img7];
 
 
 const OrderConfirmation = () => {

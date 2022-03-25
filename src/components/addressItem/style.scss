@@ -57,8 +57,7 @@
         font-size: 20px;
     }
 
-    &.address_selected,
-    &:hover {
+    &.address_selected {
         color: var(--white);
         background-color: var(--green);
 
@@ -86,6 +85,10 @@
                 background-color: currentColor;
             }
         }
+    }
+
+    &:hover {
+        
     }
 }
 

@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.scss';
 import productImg from '../../resourses/images/medicineImg1.png';
 
-const PopupOrderItem = () => {
+const PopupOrderItem = ({ openPopupOrder, setOpenPopupOrder }) => {
 
     return (
-        <div className='popup_order_item_wrap'>
+        <div className={`popup_order_item_wrap ${openPopupOrder ? "opened" : ""}`}>
 
             <div className="order_confirmation_info_wrap">
+            <i 
+                className="icon-Close"
+                onClick={() => setOpenPopupOrder(false)}
+                >
+                    <span className="path1"></span>
+                    <span className="path2"></span>
+                </i>
                 <div className="order_confirmation_info_top">
                     <h2>
                         <span>Order ID</span>
@@ -20,7 +27,7 @@ const PopupOrderItem = () => {
                     </h2>
                     <time dateTime="11-10-2021">11.10.2021</time>
                 </div>
-                <div className={`order_confirmation_info ${showHide ? "show_info" : ""}`}>
+                <div className="order_confirmation_info">
                     <div className="order_confirmation_total_status">
                         <span className='order_confirmation_info_total'>Total <span>1200</span></span>
                         <span className='order_confirmation_info_status'>Status <span>In Process</span></span>
@@ -101,15 +108,6 @@ const PopupOrderItem = () => {
                         </div>
                     </div>
                 </div>
-                <span
-                    className={`order_confirm_show_hide ${showHide ? "show" : "hide"}`}
-                    onClick={() => setShowHide(!showHide)}
-                >
-                    {showHide ? "hide " : "show "}
-                    Order Details
-
-                    <i className="icon-back"></i>
-                </span>
             </div>
 
         </div>
